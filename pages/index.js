@@ -91,15 +91,15 @@ function Home() {
             <div className='flex text-center shadow-lg rounded-xl my-10'>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
                 <h3 className='text-lg font-medium'>Famiy Man</h3>
-                <h4 className=' text-teal-600'>Loving Husband and Father of Three</h4>
+                <h4 className=' text-sky-200'>Loving Husband and Father of Three</h4>
               </div>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
                 <h3 className='text-lg font-medium'>Experience</h3>
-                <h4 className=' text-teal-600'>15+ years Employee Management Experience</h4>
+                <h4 className=' text-sky-200'>15+ years Employee Management Experience</h4>
               </div>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
                 <h3 className='text-lg font-medium'>Fast Learner</h3>
-                <h4 className=' text-teal-600'>Always Learning New Tech & Skills</h4>
+                <h4 className=' text-sky-200'>Always Learning New Tech & Skills</h4>
               </div>
             </div>
 
@@ -185,7 +185,7 @@ function Home() {
               <h4 className='py-4 text-teal-600'>This project is in progress</h4>
               <div className='flex justify-center gap-5'>
                 <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
+                <a href='' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
               </div>
 
             </div>
@@ -200,7 +200,7 @@ function Home() {
 
             </div>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
-              <h3 className='text-lg font-medium pt-8 pb-2'>This portfolio</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>This Portfolio Site</h3>
               <Image src={pro2} width={300} height={300} />
               <h4 className='py-4 text-sky-200'>Developed Using Next.js & Tailwindcss</h4>
               <div className='flex justify-center gap-5'>
@@ -283,9 +283,9 @@ function Home() {
 
 
         <div className='flex justify-center gap-11 text-3xl text-black'>
-          <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/'><AiFillLinkedin /></a>
-          <a href='https://github.com/Messyginger0804'><AiFillGithub /></a>
-          <a href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle /></a>
+          <a className='hover:text-white' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'><AiFillLinkedin /></a>
+          <a className='hover:text-white' href='https://github.com/Messyginger0804'><AiFillGithub /></a>
+          <a className='hover:text-white' href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle /></a>
         </div>
 
       </footer>
