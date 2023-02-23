@@ -250,7 +250,7 @@ function Home() {
                       <a>Send A Message</a>
                     </article>
                   </a>
-                  <a href='https://api.whatsapp.com/send?phone=12149493126' target='_blank'>
+                  <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'>
                     <article className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300'>
                       <AiFillLinkedin className='text-4xl' />
                       <h4 className='text-2xl font-bold'>Linkedin</h4>
