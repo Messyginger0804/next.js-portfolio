@@ -184,7 +184,7 @@ function Home() {
 
               <h4 className='py-4 text-teal-600'>This project is in progress</h4>
               <div className='flex justify-center gap-5'>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='https://github.com/Messyginger0804/catco2.0.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
                 <a href='' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
               </div>
 
@@ -194,8 +194,8 @@ function Home() {
               <Image src={pro4} width={300} height={300} />
               <h4 className='py-4 text-sky-200'>A Clone of Google.com using Google's API</h4>
               <div className='flex justify-center gap-5'>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
+                <a href='https://github.com/Messyginger0804/gugal.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='https://jcsgoogle.netlify.app' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
 
             </div>
@@ -204,8 +204,8 @@ function Home() {
               <Image src={pro2} width={300} height={300} />
               <h4 className='py-4 text-sky-200'>Developed Using Next.js & Tailwindcss</h4>
               <div className='flex justify-center gap-5'>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
+                <a href='https://github.com/Messyginger0804/next.js-portfolio.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='https://jcsgoogle.netlify.app' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
 
             </div>
@@ -215,8 +215,8 @@ function Home() {
               <Image src={pro3} width={300} height={300} />
               <h4 className='py-4 text-sky-200'>Tic-Tac-Toe game using DOM manipulation</h4>
               <div className='flex justify-center gap-5'>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a href='http://github.com' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
+                <a href='https://github.com/Messyginger0804/Arcade.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='https://tictactoebyjc.netlify.app' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
 
             </div>
