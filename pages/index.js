@@ -72,20 +72,22 @@ function Home() {
             <a href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
           </div>
 
-          <nav className='bg-[rgba(0, 0, 100, 0.3)] flex justify-center inset-x-2/4 bottom-2 gap-8 p-2 rounded-full fixed'>
-            <a href='#' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-            ><AiOutlineHome className='text-4xl' /></a>
-            <a href='#about' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-            ><AiOutlineUser className='text-4xl' /></a>
-            <a href='#experience' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-            ><MdComputer className='text-4xl' /></a>
-            <a href='#projects' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-            ><AiTwotoneFolderOpen className='text-4xl' /></a>
+          <div className='bg-blue-300 rounded-full flex justify-center w-ful'>
+            <nav className='flex justify-center inset-x-2/4 bottom-2 gap-8 p-2 fixed content-center'>
+              <a href='#' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              ><AiOutlineHome className='text-4xl' /></a>
+              <a href='#about' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              ><AiOutlineUser className='text-4xl' /></a>
+              <a href='#experience' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              ><MdComputer className='text-4xl' /></a>
+              <a href='#projects' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              ><AiTwotoneFolderOpen className='text-4xl' /></a>
 
-            <a href='#contact' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-            ><MdMessage className='text-4xl' />
-            </a>
-          </nav >
+              <a href='#contact' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              ><MdMessage className='text-4xl' />
+              </a>
+            </nav >
+          </div>
 
         </section>
 
@@ -195,7 +197,7 @@ function Home() {
               <h4 className='py-4 text-teal-600'>This project is in progress</h4>
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/catco2.0.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a href='' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
+                <a className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
               </div>
 
             </div>
@@ -261,7 +263,7 @@ function Home() {
 
                 </div>
                 {/* <form onSubmit={sendEmail} className='flex-col gap-11 '
-                // ref={form} onSubmit={sendEmail}
+                // ref={form} onSubmit={sendEmail(e)}
                 >
                   <div className='shadow-lg shadow-blue-50'>
 
