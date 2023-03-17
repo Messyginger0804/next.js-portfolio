@@ -102,7 +102,7 @@ function Home() {
           <div className='lg:mx-40'>
             <div className='flex text-center shadow-lg rounded-xl my-10'>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
-                <h3 className='text-lg font-medium'>Famiy Man</h3>
+                <h3 className='text-lg font-medium'>Family Man</h3>
                 <h4 className=' text-sky-200'>Loving Husband and Father of Three</h4>
               </div>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
