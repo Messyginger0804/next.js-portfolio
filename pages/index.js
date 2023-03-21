@@ -28,7 +28,8 @@ function Home() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_yykgw9e', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
+    emailjs.sendForm('service_0fdj2mx', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
+    e.target.reset();
 
   };
 
@@ -262,7 +263,7 @@ function Home() {
                   </a>
 
                 </div>
-                {/* <form onSubmit={sendEmail} className='flex-col gap-11 '
+                <form ref={form} onSubmit={sendEmail(e)} className='flex-col gap-11 '
                 // ref={form} onSubmit={sendEmail(e)}
                 >
                   <div className='shadow-lg shadow-blue-50'>
@@ -272,7 +273,7 @@ function Home() {
                     <textarea className='resize-none w-full p-1 border-2 border-blue-700 bg-transparent' name='message' rows='7' placeholder='your message' required></textarea>
                   </div>
                   <button type="submit" className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400'>Send Message</button>
-                </form> */}
+                </form>
               </div>
             </div>
 
