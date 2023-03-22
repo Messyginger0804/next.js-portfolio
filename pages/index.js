@@ -19,21 +19,25 @@ import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 
 
 function Home() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  // const form = useRef();
+    emailjs.sendForm('service_0fdj2mx', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
+      // .then(toast('Thank you for your message, I will get back to you ASAP!'))
+      .then(toast(
+        <h3 className='text-center text-4xl'>Thank you for your message, I will get back to you ASAP!</h3>
+      ))
+    // .then(toast(''))
+    e.target.reset();
 
-  // const sendEmail = (e) => {
-  //   // e.preventDefault();
-
-  //   emailjs.sendForm('service_0fdj2mx', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
-  //   e.target.reset();
-
-  // };
+  };
 
 
 
@@ -81,9 +85,9 @@ function Home() {
               ><AiOutlineHome className='text-4xl' /></a>
               <a href='#about' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
               ><AiOutlineUser className='text-4xl' /></a>
-              <a href='#experience' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              <a href='#tech stack' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
               ><MdComputer className='text-4xl' /></a>
-              <a href='#projects' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
+              <a href='#experience' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
               ><AiTwotoneFolderOpen className='text-4xl' /></a>
 
               <a href='#contact' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
@@ -128,7 +132,7 @@ function Home() {
 
 
         {/* THE TECH STACK I USE */}
-        <section id='experience' className='min-h-screen'>
+        <section id='tech stack' className='min-h-screen'>
 
           <h5 className='text-center'>Tools I Use</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>My Current Tech Stack</h3>
@@ -187,7 +191,7 @@ function Home() {
 
 
         {/* ----------PROJECTS---------- */}
-        <section id='projects' className='min-h-screen'>
+        <section id='experience' className='min-h-screen'>
 
           <h5 className='text-center'>My Recent Work</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Freelance Jobs</h3>
@@ -205,7 +209,7 @@ function Home() {
             </div>
 
           </div>
-          <h5 className='text-center'>My Recent Work</h5>
+          <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
@@ -281,9 +285,9 @@ function Home() {
                   </a>
 
                 </div>
-                {/* <form
-                  ref={form} onSubmit={sendEmail()}
-                  className='flex-col gap-11 '
+                <form
+                  ref={form} onSubmit={sendEmail}
+                  className='flex-col gap-11 px-15 md:px-20'
                 // ref={form} onSubmit={sendEmail(e)}
                 >
                   <div className='shadow-lg shadow-blue-50'>
@@ -293,10 +297,20 @@ function Home() {
                     <textarea className='resize-none w-full p-1 border-2 border-blue-700 bg-transparent' name='message' rows='7' placeholder='your message' required></textarea>
                   </div>
                   <button type="submit" className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400'>Send Message</button>
-                </form> */}
+                </form>
               </div>
             </div>
-
+            <ToastContainer
+              lt
+              position="top-left"
+              autoClose={2000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              draggable
+              pauseOnHover
+              theme="dark" />
           </div>
         </section >
 
