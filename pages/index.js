@@ -230,7 +230,7 @@ function Home() {
               <h4 className='py-4 text-sky-200'>A Clone of Google.com using Google's API</h4>
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/gugal.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
+                <a href='https://jcsgoogle.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
 
             </div>
