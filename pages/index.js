@@ -8,6 +8,7 @@ import pro1 from '../public/catco-logo.jpg'
 import pro2 from '../public/port.jpg'
 import pro3 from '../public/Tic_tac_toe.svg.png'
 import pro4 from '../public/google.jpg'
+import TFLS from '../public/TFLS.jpg'
 // import { resume } from '../public/resume.pdf'
 import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -17,21 +18,22 @@ import { AiFillHtml5, AiOutlineMail, AiOutlineWhatsApp, AiOutlineHome, AiOutline
 import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/si';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Link from 'next/link';
 
 
 
 
 function Home() {
 
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   // e.preventDefault();
 
-    emailjs.sendForm('service_0fdj2mx', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
-    e.target.reset();
+  //   emailjs.sendForm('service_0fdj2mx', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
+  //   e.target.reset();
 
-  };
+  // };
 
 
 
@@ -188,6 +190,22 @@ function Home() {
         <section id='projects' className='min-h-screen'>
 
           <h5 className='text-center'>My Recent Work</h5>
+          <h3 className='text-center text-3xl py-1 text-sky-300'>Freelance Jobs</h3>
+          <div className=' flex justify-center flex-wrap lg:flex gap-10'>
+            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Top Flight Lawn Service</h3>
+              <Link href='https://topflightlawnservice.vercel.app/'>
+                <Image src={TFLS} width={300} height={300} />
+              </Link>
+              <h4 className='py-4 text-sky-200'>Local DFW Landscaping Company</h4>
+              {/* <div className='flex justify-center gap-5'>
+                <a href='https://github.com/Messyginger0804/gugal.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
+              </div> */}
+            </div>
+
+          </div>
+          <h5 className='text-center'>My Recent Work</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
@@ -263,7 +281,9 @@ function Home() {
                   </a>
 
                 </div>
-                <form ref={form} onSubmit={sendEmail(e)} className='flex-col gap-11 '
+                {/* <form
+                  ref={form} onSubmit={sendEmail()}
+                  className='flex-col gap-11 '
                 // ref={form} onSubmit={sendEmail(e)}
                 >
                   <div className='shadow-lg shadow-blue-50'>
@@ -273,7 +293,7 @@ function Home() {
                     <textarea className='resize-none w-full p-1 border-2 border-blue-700 bg-transparent' name='message' rows='7' placeholder='your message' required></textarea>
                   </div>
                   <button type="submit" className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400'>Send Message</button>
-                </form>
+                </form> */}
               </div>
             </div>
 
