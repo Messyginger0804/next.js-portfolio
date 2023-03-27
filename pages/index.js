@@ -194,7 +194,7 @@ function Home() {
         <section id='experience' className='min-h-screen'>
 
           <h5 className='text-center'>My Recent Work</h5>
-          <h3 className='text-center text-3xl py-1 text-sky-300'>Freelance Jobs</h3>
+          <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Top Flight Lawn Service</h3>
