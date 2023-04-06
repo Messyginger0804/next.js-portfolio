@@ -9,6 +9,7 @@ import pro2 from '../public/port.jpg'
 import pro3 from '../public/Tic_tac_toe.svg.png'
 import pro4 from '../public/google.jpg'
 import TFLS from '../public/TFLS.jpg'
+import JLD from '../public/JLD.png'
 // import { resume } from '../public/resume.pdf'
 import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -190,25 +191,33 @@ function Home() {
 
 
 
-        {/* ----------PROJECTS---------- */}
         <section id='experience' className='min-h-screen'>
+
+          {/* -------------Contracted Work===================== */}
 
           <h5 className='text-center'>My Recent Work</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Top Flight Lawn Service</h3>
+              <p><span className='px-2'>client:</span>Rene Guillen</p>
+              <a href='tel:2147794259' className='hover:underline'>214-779-4259</a>
               <Link href='https://topflightlawnservice.vercel.app/'>
                 <Image src={TFLS} width={300} height={300} />
               </Link>
               <h4 className='py-4 text-sky-200'>Local DFW Landscaping Company</h4>
-              {/* <div className='flex justify-center gap-5'>
-                <a href='https://github.com/Messyginger0804/gugal.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
-              </div> */}
             </div>
-
+            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+              <h3 className='text-lg font-medium pt-8 pb-2'>JLD Counseling</h3>
+              <p><span className='px-2'>client:</span>Jason Daughtery</p>
+              <a href='tel:2147794259' className='hover:underline'>214-785-7426</a>
+              <Link href='https://jldcounsel.com/'>
+                <Image src={JLD} width={300} height={300} />
+              </Link>
+              <h4 className='py-4 text-sky-200'>Local DFW Therapy and Counseling Clinic</h4>
+            </div>
           </div>
+          {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
