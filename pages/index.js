@@ -68,7 +68,8 @@ function Home() {
               <a className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
             </div>
 
-            <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-100 h-80 mt-5 mb-40 md:h-96 md:w-96 lg:md-80 lg:80'>
+            <div className='relative mx-auto p-4 w-100 h-80 mt-5 mb-40 
+            md:h-96 md:w-96 lg:md-80 lg:80'>
               <Image src={JC}
               />
             </div>
@@ -102,7 +103,7 @@ function Home() {
         {/* SECTION 2 ---- ABOUT ME----*/}
         <section id='about' className='min-h-screen mt-60 my-8'>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
-            <Image src={collage} />
+            <Image src={collage} alt='collage' />
           </div>
 
           <h5 className='text-center'>Get To Know Me</h5>
@@ -203,7 +204,7 @@ function Home() {
               <p><span className='px-2'>client:</span>Rene Guillen</p>
               <a href='tel:2147794259' className='hover:underline'>214-779-4259</a>
               <Link href='https://topflightlawnservice.vercel.app/'>
-                <Image src={TFLS} width={300} height={300} />
+                <Image src={TFLS} width={300} height={300} alt='TFLS Logo' />
               </Link>
               <h4 className='py-4 text-sky-200'>Local DFW Landscaping Company</h4>
             </div>
@@ -211,8 +212,8 @@ function Home() {
               <h3 className='text-lg font-medium pt-8 pb-2'>JLD Counseling</h3>
               <p><span className='px-2'>client:</span>Jason Daughtery</p>
               <a href='tel:2147794259' className='hover:underline'>214-785-7426</a>
-              <Link href='https://jldcounsel.com/'>
-                <Image src={JLD} width={300} height={300} />
+              <Link href='https://jldcounseling.netlify.com/'>
+                <Image src={JLD} width={300} height={300} alt='JLD logo' />
               </Link>
               <h4 className='py-4 text-sky-200'>Local DFW Therapy and Counseling Clinic</h4>
             </div>
@@ -223,7 +224,7 @@ function Home() {
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Catco.com</h3>
-              <Image src={pro1} width={300} height={300} />
+              <Image src={pro1} width={300} height={300} alt='' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Fullstack e-comerce site</h3>
 
               <h4 className='py-4 text-teal-600'>This project is in progress</h4>
