@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/a
 import JC from '../public/jc-as-a-sentare.jpg'
 import collage from '../public/collage.jpg'
 import Image from 'next/image';
-import pro1 from '../public/catco-logo.jpg'
+import pro1 from '../public/tias-logo.jpg'
 import pro2 from '../public/port.jpg'
 import pro3 from '../public/Tic_tac_toe.svg.png'
 import pro4 from '../public/google.jpg'
@@ -223,14 +223,14 @@ function Home() {
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Catco.com</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Tias.com</h3>
               <Image src={pro1} width={300} height={300} alt='' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Fullstack e-comerce site</h3>
 
-              <h4 className='py-4 text-teal-600'>This project is in progress</h4>
+              {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/catco2.0.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 hover:cursor-not-allowed' target='_blank'>Live Demo</a>
+                <a href='https://tias.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
 
             </div>
