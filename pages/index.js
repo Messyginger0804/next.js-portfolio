@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/a
 import JC from '../public/jc-as-a-sentare.jpg'
 import collage from '../public/collage.jpg'
 import Image from 'next/image';
-import pro1 from '../public/tias-logo.jpg'
+import pro1 from '../public/tias-logo.png'
 import pro2 from '../public/port.jpg'
 import pro3 from '../public/Tic_tac_toe.svg.png'
 import pro4 from '../public/google.jpg'
