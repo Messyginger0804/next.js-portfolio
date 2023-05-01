@@ -60,7 +60,7 @@ function Home() {
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-4'>
-              <a href='https://drive.google.com/file/d/1PTs2p8KC8KkG0dCMQwpoOxJr26c4Qgw4/view?usp=share_link' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
+              <a href='https://drive.google.com/file/d/17bz_ividWVDZwo5ULulZm-7ZgQ3J7_3L/view?usp=share_link' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
                 Resume</a>
               <a className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
             </div>
