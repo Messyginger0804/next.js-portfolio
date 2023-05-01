@@ -8,6 +8,7 @@ import pro1 from '../public/tias-logo.png'
 import pro2 from '../public/port.jpg'
 import pro3 from '../public/Tic_tac_toe.svg.png'
 import pro4 from '../public/google.jpg'
+import gpt from '../public/gpt4.jpg'
 import TFLS from '../public/TFLS.jpg'
 import JLD from '../public/JLD.png'
 // import { resume } from '../public/resume.pdf'
@@ -21,8 +22,6 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
-
-
 
 
 function Home() {
@@ -39,8 +38,6 @@ function Home() {
     e.target.reset();
 
   };
-
-
 
   return (
     <div className='text-white'>
@@ -198,6 +195,7 @@ function Home() {
 
           <h5 className='text-center'>My Recent Work</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
+
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Top Flight Lawn Service</h3>
@@ -221,19 +219,34 @@ function Home() {
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
+
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
+
+            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+              <h3 className='text-lg font-medium pt-8 pb-2'>JC-GPT</h3>
+              <Image src={gpt} width={300} height={300} alt='' />
+              <h3 className='text-lg font-medium pt-8 pb-2'>A Clone of ChatGPT</h3>
+              <p className='pb-4'>This site Project is in progress</p>
+
+              {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
+              <div className='flex justify-center gap-5'>
+                <a href='https://github.com/Messyginger0804/clonegpt.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='https://main--jcgpt.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
+              </div>
+            </div>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Tias.com</h3>
               <Image src={pro1} width={300} height={300} alt='' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Fullstack e-comerce site</h3>
+              <p className='pb-4'>Developed using fakestoreapi.com</p>
 
               {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/catco2.0.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
                 <a href='https://tias.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
-
             </div>
+
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Google-Clone</h3>
               <Image src={pro4} width={300} height={300} />
@@ -263,8 +276,8 @@ function Home() {
                 <a href='https://github.com/Messyginger0804/Arcade.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
                 <a href='https://tictactoebyjc.netlify.app' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
-
             </div>
+
           </div>
         </section>
 
