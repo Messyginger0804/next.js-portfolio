@@ -15,7 +15,7 @@ import JLD from '../public/JLD.png'
 import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { MdComputer, MdMessage } from 'react-icons/md';
-import { DiJavascript, DiCss3 } from 'react-icons/di';
+import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
 import { AiFillHtml5, AiOutlineMail, AiOutlineWhatsApp, AiOutlineHome, AiOutlineUser, AiTwotoneFolderOpen } from 'react-icons/ai';
 import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/si';
 import { useRef } from 'react';
@@ -134,7 +134,7 @@ function Home() {
         <section id='tech stack' className='min-h-screen'>
 
           <h5 className='text-center'>Tools I Use</h5>
-          <h3 className='text-center text-3xl py-1 text-sky-300'>My Current Tech Stack</h3>
+          <h3 className='text-center text-3xl py-1 text-sky-300'>My Tech Stack</h3>
           <div className='my-20 lg:flex justify-center gap-10'>
             <div className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
               <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
@@ -147,6 +147,9 @@ function Home() {
                 </article>
                 <article>
                   <h4 ><DiJavascript className='text-4xl' />JAVASCRIPT</h4>
+                </article>
+                <article>
+                  <h4 ><DiJava className='text-4xl' />JAVA</h4>
                 </article>
                 <article>
                   <h4> <FaBootstrap className='text-4xl' />BOOTSTRAP</h4>
