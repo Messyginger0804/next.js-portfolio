@@ -8,11 +8,12 @@ import pro1 from '../public/tias-logo.png'
 import pro2 from '../public/port.jpg'
 import pro3 from '../public/Tic_tac_toe.svg.png'
 import pro4 from '../public/google.jpg'
+import pro5 from '../public/dinerfinder.png'
 import gpt from '../public/gpt4.jpg'
 import TFLS from '../public/TFLS.jpg'
 import JLD from '../public/JLD.png'
 // import { resume } from '../public/resume.pdf'
-import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaBootstrap, FaXTwitter } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { MdComputer, MdMessage } from 'react-icons/md';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
@@ -60,7 +61,7 @@ function Home() {
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-4'>
-              <a href='https://drive.google.com/file/d/1eUAm-AZdcGwnKr2HUpuenF6f0pejgptG/view?usp=drive_link' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
+              <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=drive_link' target='_blank' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
                 Resume</a>
               <a className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
             </div>
@@ -73,9 +74,9 @@ function Home() {
 
           </div >
           <div className=' text-5xl flex justify-center gap-16 py-3 text-white '>
-            <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/'> <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
-            <a href='https://github.com/Messyginger0804'><AiFillGithub className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
-            <a href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
+            <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'> <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
+            <a href='https://github.com/Messyginger0804' target='_blank'><AiFillGithub className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
+            <a href='https://twitter.com/Messyginger0804' target='_blank'><AiFillTwitterCircle className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
           </div>
 
           <div className='bg-blue-300 rounded-full flex justify-center w-ful'>
@@ -219,17 +220,34 @@ function Home() {
               <h4 className='py-4 text-sky-200'>Local DFW Therapy and Counseling Clinic</h4>
             </div>
           </div>
+
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
 
           <div className=' flex justify-center flex-wrap lg:flex gap-10'>
 
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+
+            {/*----------PROJECT----------*/}
+            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Diner Finder</h3>
+              <Image src={pro5} width={300} height={300} alt='' />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Restaurant Review Site</h3>
+              <p className='pb-4'>Developed using PERN | custom Databse | hosted using AWS</p>
+
+              {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
+              <div className='flex justify-center gap-5'>
+                <a href='https://github.com/Messyginger0804/dinerAudit.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='http://3.144.102.215/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
+              </div>
+            </div>
+
+            {/*----------PROJECT----------*/}
+            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>JC-GPT</h3>
               <Image src={gpt} width={300} height={300} alt='' />
               <h3 className='text-lg font-medium pt-8 pb-2'>A Clone of ChatGPT</h3>
-              <p className='pb-4'>This site Project is in progress</p>
+              <p className='pb-4'>A clone of ChatGPT developed using their free access API</p>
 
               {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
               <div className='flex justify-center gap-5'>
@@ -237,9 +255,11 @@ function Home() {
                 <a href='https://main--jcgpt.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
             </div>
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+
+            {/*----------PROJECT----------*/}
+            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Tias.com</h3>
-              <Image src={pro1} width={300} height={300} alt='' />
+              <Image src={pro1} width={200} height={200} alt='' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Fullstack e-comerce site</h3>
               <p className='pb-4'>Developed using fakestoreapi.com</p>
 
@@ -250,7 +270,8 @@ function Home() {
               </div>
             </div>
 
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            {/*----------PROJECT----------*/}
+            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Google-Clone</h3>
               <Image src={pro4} width={300} height={300} />
               <h4 className='py-4 text-sky-200'>A Clone of Google.com using Google's API</h4>
@@ -258,9 +279,10 @@ function Home() {
                 <a href='https://github.com/Messyginger0804/gugal.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
                 <a href='https://jcsgoogle.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
-
             </div>
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+
+            {/*----------PROJECT----------*/}
+            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>This Portfolio Site</h3>
               <Image src={pro2} width={300} height={300} />
               <h4 className='py-4 text-sky-200'>Developed Using Next.js & Tailwindcss</h4>
@@ -268,12 +290,12 @@ function Home() {
                 <a href='https://github.com/Messyginger0804/next.js-portfolio.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
                 <a href='https://jcashleyportfolio.netlify.app' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
               </div>
-
             </div>
 
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            {/*----------PROJECT----------*/}
+            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Tic-Tac-Toe</h3>
-              <Image src={pro3} width={300} height={300} />
+              <Image src={pro3} width={300} height={300} className='flex justify-center' />
               <h4 className='py-4 text-sky-200'>Tic-Tac-Toe game using DOM manipulation</h4>
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/Arcade.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
