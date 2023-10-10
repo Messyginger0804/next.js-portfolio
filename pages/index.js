@@ -61,7 +61,7 @@ function Home() {
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-4'>
-              <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=drive_link' target='_blank' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
+              <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=sharing' target='_blank' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
                 Resume</a>
               <a className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
             </div>
@@ -137,7 +137,8 @@ function Home() {
           <h5 className='text-center'>Tools I Use</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>My Tech Stack</h3>
           <div className='my-20 lg:flex justify-center gap-10'>
-            <div className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
+
+            <div className='text-center w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
               <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
               <div className='flex flex-wrap gap-5 hover:ease-out'>
                 <article >
@@ -167,10 +168,10 @@ function Home() {
 
               </div>
             </div>
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
-              <h3 className='text-lg font-medium pb-2 text-sky-300'>BACK-END</h3>
+            <div className='text-center p-10 rounded-xl my-10 w-1/2 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
+              <h3 className='text-center text-lg font-medium pb-2 text-sky-300'>BACK-END</h3>
 
-              <div className='flex flex-wrap gap-5'>
+              <div className='text-center flex flex-wrap gap-5'>
                 <article>
                   <h4> <FaNodeJs />NODE.JS</h4>
                 </article>
@@ -183,7 +184,9 @@ function Home() {
                 <article>
                   <h4><SiAcademia /> AXIOS</h4>
                 </article>
-
+                <article className='flex text-center'>
+                  <h4 ><DiJava className='text-4xl' />JAVA</h4>
+                </article>
               </div>
             </div>
 
