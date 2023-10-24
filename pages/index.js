@@ -4,14 +4,15 @@ import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/a
 import JC from '../public/jc-as-a-sentare.jpg'
 import collage from '../public/collage.jpg'
 import Image from 'next/image';
-import pro1 from '../public/tias-logo.png'
-import pro2 from '../public/port.jpg'
-import pro3 from '../public/Tic_tac_toe.svg.png'
-import pro4 from '../public/google.jpg'
-import pro5 from '../public/dinerfinder.png'
+import tias from '../public/tias-logo.png'
+import port from '../public/port.jpg'
+import tic from '../public/Tic_tac_toe.svg.png'
+import google from '../public/google.jpg'
+import dinfin from '../public/dinerfinder.png'
 import gpt from '../public/gpt4.jpg'
 import TFLS from '../public/TFLS.jpg'
 import JLD from '../public/JLD.png'
+import blog from '../public/Blog.png'
 // import { resume } from '../public/resume.pdf'
 import { FaReact, FaNodeJs, FaBootstrap, FaXTwitter } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -48,7 +49,7 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-[#19184a] px-5 md:px-20 lg:px-40 overflow-x-hidden'>
+      <main className='bg-[#19184a] px-5 px-20 lg:px-40 overflow-x-hidden'>
 
         {/* HOMEPAGE */}
         <section id='/' className='min-h-screen'>
@@ -56,8 +57,8 @@ function Home() {
           {/* home page */}
           <div className='text-center p-10 py-10'>
             <h1 className="text-xl text-sky-100">Hello I'm</h1>
-            <h2 className='text-5xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
-            <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3>
+            <h2 className='text-5xl py-2 text-sky-300 font-medium text-6xl'>Jeremy "JC" Ashley</h2>
+            <h3 className='text-2xl py-2 text-blue-50 text-3xl'>Fullstack Developer</h3>
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-4'>
@@ -67,7 +68,7 @@ function Home() {
             </div>
 
             <div className='relative mx-auto p-4 w-100 h-80 mt-5 mb-40 
-            md:h-96 md:w-96 lg:md-80 lg:80'>
+            h-96 w-96 lg:md-80 lg:80'>
               <Image src={JC}
               />
             </div>
@@ -101,7 +102,7 @@ function Home() {
 
         {/* SECTION 2 ---- ABOUT ME----*/}
         <section id='about' className='min-h-screen mt-60 my-8'>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 h-96 w-96 hover:rotate-12 hover:duration-1000'>
             <Image src={collage} alt='collage' />
           </div>
 
@@ -139,9 +140,9 @@ function Home() {
           <h3 className='text-center text-3xl py-1 text-sky-300'>My Tech Stack</h3>
 
 
-          <div className='my-20 lg:flex justify-center gap-10'>
+          <div className='my-20 flex justify-center gap-10'>
 
-            <div className='text-center w-full md:w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
+            <div className='text-center w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
               <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
               <div className='flex flex-wrap gap-5 hover:ease-out'>
                 <article >
@@ -168,7 +169,7 @@ function Home() {
 
               </div>
             </div>
-            <div className='text-center p-10 rounded-xl my-10 w-full md:w-1/2 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
+            <div className='text-center p-10 rounded-xl my-10 w-1/2 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
               <h3 className='text-center text-lg font-medium pb-2 text-sky-300'>BACK-END</h3>
 
               <div className='text-center flex flex-wrap gap-5'>
@@ -194,8 +195,6 @@ function Home() {
         </section>
 
 
-
-
         <section id='experience' className='min-h-screen'>
 
           {/* -------------Contracted Work===================== */}
@@ -203,24 +202,40 @@ function Home() {
           <h5 className='text-center'>My Recent Work</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
 
-          <div className=' flex justify-center flex-wrap lg:flex gap-10'>
-            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+          <div className='flex justify-center flex-wrap lg:flex gap-10'>
+            <div className='text-center p-10  rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Top Flight Lawn Service</h3>
               <p><span className='px-2'>client:</span>Rene Guillen</p>
               <a href='tel:2147794259' className='hover:underline'>214-779-4259</a>
               <Link href='https://topflightlawnservice.vercel.app/'>
-                <Image src={TFLS} width={300} height={300} alt='TFLS Logo' />
+                <div className='flex justify-center'>
+                  <Image
+                    className='flex justify-center fit object-center rounded'
+                    src={TFLS}
+                    width={100}
+                    height={100}
+                    alt='TFLS Logo'
+                  />
+                </div>
               </Link>
-              <h4 className='py-4 text-sky-200'>Local DFW Landscaping Company</h4>
+              <h4 className='py-4 text-sky-200'>DFW Landscaping Company</h4>
             </div>
             <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>JLD Counseling</h3>
               <p><span className='px-2'>client:</span>Jason Daughtery</p>
               <a href='tel:2147794259' className='hover:underline'>214-785-7426</a>
               <Link href='https://jldcounseling.netlify.com/'>
-                <Image src={JLD} width={300} height={300} alt='JLD logo' />
+                <div className='flex justify-center'>
+                  <Image
+                    className='flex justify-center fit object-center'
+                    src={JLD}
+                    width={200}
+                    height={200}
+                    alt='JLD Logo'
+                  />
+                </div>
               </Link>
-              <h4 className='py-4 text-sky-200'>Local DFW Therapy and Counseling Clinic</h4>
+              <h4 className='py-4 text-sky-200'>DFW Therapy and Counseling Clinic</h4>
             </div>
           </div>
 
@@ -228,13 +243,42 @@ function Home() {
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
 
-          <div className=' flex justify-center flex-wrap lg:flex gap-10'>
+          <div className=' flex justify-center flex-wrap lg:flex gap-5'>
 
 
             {/*----------PROJECT----------*/}
-            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            <div className='text-center p-10 rounded-xl  my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Blogs by JC</h3>
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center rounded'
+                  src={blog}
+                  width={100}
+                  height={100}
+                  alt=''
+                />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Blog Site</h3>
+              <p className='pb-4'>Developed using Next.js | Contentlayer</p>
+
+              {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
+              <div className='flex justify-center gap-5'>
+                <a href='https://github.com/Messyginger0804/blogs-by-jc-focontent' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
+                <a href='https://blogs-by-jc-focontent.vercel.app' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Demo</a>
+                <a href='https://blogsbyjc.vercel.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Site</a>
+              </div>
+            </div>
+            <div className='text-center p-10 rounded-xl  my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Diner Finder</h3>
-              <Image src={pro5} width={300} height={300} alt='' />
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center rounded'
+                  src={dinfin}
+                  width={100}
+                  height={100}
+                  alt=''
+                />
+              </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Restaurant Review Site</h3>
               <p className='pb-4'>Developed using PERN | custom Databse | hosted using AWS</p>
 
@@ -246,9 +290,17 @@ function Home() {
             </div>
 
             {/*----------PROJECT----------*/}
-            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>JC-GPT</h3>
-              <Image src={gpt} width={300} height={300} alt='' />
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center rounded'
+                  src={gpt}
+                  width={100}
+                  height={100}
+                  alt=''
+                />
+              </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>A Clone of ChatGPT</h3>
               <p className='pb-4'>A clone of ChatGPT developed using their free access API</p>
 
@@ -260,9 +312,17 @@ function Home() {
             </div>
 
             {/*----------PROJECT----------*/}
-            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Tias.com</h3>
-              <Image src={pro1} width={200} height={200} alt='' />
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center'
+                  src={tias}
+                  width={100}
+                  height={100}
+                  alt='TIAS Logo'
+                />
+              </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Fullstack e-comerce site</h3>
               <p className='pb-4'>Developed using fakestoreapi.com</p>
 
@@ -274,9 +334,17 @@ function Home() {
             </div>
 
             {/*----------PROJECT----------*/}
-            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Google-Clone</h3>
-              <Image src={pro4} width={300} height={300} />
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center rounded'
+                  src={google}
+                  width={100}
+                  height={100}
+                  alt='google Logo'
+                />
+              </div>
               <h4 className='py-4 text-sky-200'>A Clone of Google.com using Google's API</h4>
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/gugal.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
@@ -285,9 +353,17 @@ function Home() {
             </div>
 
             {/*----------PROJECT----------*/}
-            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>This Portfolio Site</h3>
-              <Image src={pro2} width={300} height={300} />
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center rounded'
+                  src={port}
+                  width={100}
+                  height={100}
+                  alt='JLD Logo'
+                />
+              </div>
               <h4 className='py-4 text-sky-200'>Developed Using Next.js & Tailwindcss</h4>
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/next.js-portfolio.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
@@ -296,9 +372,17 @@ function Home() {
             </div>
 
             {/*----------PROJECT----------*/}
-            <div className='text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+            <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Tic-Tac-Toe</h3>
-              <Image src={pro3} width={300} height={300} className='flex justify-center' />
+              <div className='flex justify-center'>
+                <Image
+                  className='flex justify-center fit object-center rounded'
+                  src={tic}
+                  width={100}
+                  height={100}
+                  alt='tic-tac-toe'
+                />
+              </div>
               <h4 className='py-4 text-sky-200'>Tic-Tac-Toe game using DOM manipulation</h4>
               <div className='flex justify-center gap-5'>
                 <a href='https://github.com/Messyginger0804/Arcade.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
@@ -338,7 +422,7 @@ function Home() {
                 </div>
                 <form
                   ref={form} onSubmit={sendEmail}
-                  className='flex-col gap-11 px-15 md:px-20'
+                  className='flex-col gap-11 px-15 px-20'
                 // ref={form} onSubmit={sendEmail(e)}
                 >
                   <div className='shadow-lg shadow-blue-50'>
