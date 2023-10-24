@@ -73,8 +73,9 @@ function Home() {
             </div>
 
           </div >
-          <div className=' text-5xl flex justify-center gap-16 py-3 text-white '>
-            <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'> <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
+          <div className='  text-5xl flex justify-center gap-16 py-3 text-white '>
+            <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'>
+              <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
             <a href='https://github.com/Messyginger0804' target='_blank'><AiFillGithub className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
             <a href='https://twitter.com/Messyginger0804' target='_blank'><AiFillTwitterCircle className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
           </div>
@@ -136,9 +137,11 @@ function Home() {
 
           <h5 className='text-center'>Tools I Use</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>My Tech Stack</h3>
+
+
           <div className='my-20 lg:flex justify-center gap-10'>
 
-            <div className='text-center w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
+            <div className='text-center w-full md:w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
               <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
               <div className='flex flex-wrap gap-5 hover:ease-out'>
                 <article >
@@ -149,9 +152,6 @@ function Home() {
                 </article>
                 <article>
                   <h4 ><DiJavascript className='text-4xl' />JAVASCRIPT</h4>
-                </article>
-                <article>
-                  <h4 ><DiJava className='text-4xl' />JAVA</h4>
                 </article>
                 <article>
                   <h4> <FaBootstrap className='text-4xl' />BOOTSTRAP</h4>
@@ -168,7 +168,7 @@ function Home() {
 
               </div>
             </div>
-            <div className='text-center p-10 rounded-xl my-10 w-1/2 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
+            <div className='text-center p-10 rounded-xl my-10 w-full md:w-1/2 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
               <h3 className='text-center text-lg font-medium pb-2 text-sky-300'>BACK-END</h3>
 
               <div className='text-center flex flex-wrap gap-5'>
