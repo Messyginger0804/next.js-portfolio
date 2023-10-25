@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
 // import { BsFillMoonStarsFill } from 'react-icons/bs'
-import JC from '../public/jc-as-a-sentare.jpg'
+import JC from '../public/jc-as-a-sentare.png'
 import collage from '../public/collage.jpg'
 import Image from 'next/image';
 import tias from '../public/tias-logo.png'
@@ -49,7 +49,7 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-[#19184a] px-5 px-20 lg:px-40 overflow-x-hidden'>
+      <main className='bg-[#19184a] px-5 md:px-20 lg:px-40 overflow-x-hidden'>
 
         {/* HOMEPAGE */}
         <section id='/' className='min-h-screen'>
@@ -57,8 +57,8 @@ function Home() {
           {/* home page */}
           <div className='text-center p-10 py-10'>
             <h1 className="text-xl text-sky-100">Hello I'm</h1>
-            <h2 className='text-5xl py-2 text-sky-300 font-medium text-6xl'>Jeremy "JC" Ashley</h2>
-            <h3 className='text-2xl py-2 text-blue-50 text-3xl'>Fullstack Developer</h3>
+            <h2 className='text-5xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
+            <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3>
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-4'>
@@ -68,8 +68,11 @@ function Home() {
             </div>
 
             <div className='relative mx-auto p-4 w-100 h-80 mt-5 mb-40 
-            h-96 w-96 lg:md-80 lg:80'>
-              <Image src={JC}
+           md:h-96 md:w-96 lg:md-80 lg:80'>
+              <Image
+                src={JC}
+              // height={300}
+              // width={300}
               />
             </div>
 
@@ -102,7 +105,7 @@ function Home() {
 
         {/* SECTION 2 ---- ABOUT ME----*/}
         <section id='about' className='min-h-screen mt-60 my-8'>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 h-96 w-96 hover:rotate-12 hover:duration-1000'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
             <Image src={collage} alt='collage' />
           </div>
 
@@ -202,8 +205,8 @@ function Home() {
           <h5 className='text-center'>My Recent Work</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
 
-          <div className='flex justify-center flex-wrap lg:flex gap-10'>
-            <div className='text-center p-10  rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
+          <div className=' flex justify-center flex-wrap lg:flex gap-10'>
+            <div className='text-center p-10 rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Top Flight Lawn Service</h3>
               <p><span className='px-2'>client:</span>Rene Guillen</p>
               <a href='tel:2147794259' className='hover:underline'>214-779-4259</a>
@@ -422,7 +425,7 @@ function Home() {
                 </div>
                 <form
                   ref={form} onSubmit={sendEmail}
-                  className='flex-col gap-11 px-15 px-20'
+                  className='flex-col gap-11 px-15 md:px-20'
                 // ref={form} onSubmit={sendEmail(e)}
                 >
                   <div className='shadow-lg shadow-blue-50'>
