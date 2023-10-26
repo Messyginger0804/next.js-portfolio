@@ -7,8 +7,8 @@ Welcome to my portfolio website, which I built using Next.js. This project marks
 - **Project Name:** Portfolio Website
 - **Framework:** Next.js
 - **Styling:** Tailwind CSS
-- **Developed By:** [Your Name]
-- **GitHub Repository:** [Insert Repository URL]
+- **Developed By:** Jeremy Ashley
+- **GitHub Repository:** https://github.com/Messyginger0804/next.js-portfolio.git
 
 ## Features
 
@@ -29,13 +29,14 @@ For this project, I utilized the following technologies:
 
 To explore my portfolio website, simply follow these steps:
 
+visit https://jcashleyportfolio.netlify.app/ or:
+
 1. Clone or download the project repository to your local machine.
 
 2. Navigate to the project directory.
 
 3. Run the application using Next.js:
 
-   ```bash
    npm install
    npm run dev
 
