@@ -23,9 +23,9 @@ My portfolio website offers the following features:
 For this project, I utilized the following technologies:
 
 - **[Next.js](http://nextjs.org):** A React framework for building server-rendered applications.
-- **Tailwind CSS:** A utility-first CSS framework for rapid web development.
-- **email.js:** A utility-first CSS framework for rapid web development. email.js
-- **Toastify:** https://github.com/fkhadra/react-toastify
+- **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid web development.
+- **[email.js](https://www.emailjs.com/):** JavaScript library that facilitates direct email sending with various email service providers' APIs.
+- **[Toastify](https://github.com/fkhadra/react-toastify):** React dependency that provides easy to use notifications handling.
 
 ## How to Use
 
