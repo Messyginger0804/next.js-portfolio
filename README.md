@@ -22,7 +22,7 @@ My portfolio website offers the following features:
 
 For this project, I utilized the following technologies:
 
-- **Next.js:** A React framework for building server-rendered applications.
+- **[Next.js](http://nextjs.org):** A React framework for building server-rendered applications.
 - **Tailwind CSS:** A utility-first CSS framework for rapid web development.
 - **email.js:** A utility-first CSS framework for rapid web development. email.js
 - **Toastify:** https://github.com/fkhadra/react-toastify
