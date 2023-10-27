@@ -37,7 +37,7 @@ visit [Portfolio Website](https://jcashleyportfolio.netlify.app/) or:
 
 2. Navigate to the project directory.
 
-3. Run the application using [Next.js]:(http://nextjs.org)
+3. Run the application using [Next.js](http://nextjs.org):
 
    npm install
    npm run dev
