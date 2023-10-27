@@ -24,6 +24,8 @@ For this project, I utilized the following technologies:
 
 - **Next.js:** A React framework for building server-rendered applications.
 - **Tailwind CSS:** A utility-first CSS framework for rapid web development.
+- **email.js:** A utility-first CSS framework for rapid web development. email.js
+- **Toastify:** https://github.com/fkhadra/react-toastify
 
 ## How to Use
 
@@ -35,7 +37,7 @@ visit [Portfolio Website](https://jcashleyportfolio.netlify.app/) or:
 
 2. Navigate to the project directory.
 
-3. Run the application using Next.js:
+3. Run the application using [Next.js]:(http://nextjs.org)
 
    npm install
    npm run dev
