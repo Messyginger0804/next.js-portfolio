@@ -4,10 +4,10 @@ Welcome to my portfolio website, which I built using Next.js. This project marks
 
 ## Project Overview
 
-- **Project Name:** Portfolio Website
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS
-- **Developed By:** Jeremy Ashley
+- **Project Name:** [Portfolio Website](https://nextjs.org/)
+- **Framework:** [Next.js](https://jcashleyportfolio.netlify.app/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Developed By:** [Jeremy Ashley](https://www.linkedin.com/in/jeremy-ashley-webdev/)
 - **GitHub Repository:** https://github.com/Messyginger0804/next.js-portfolio.git
 
 ## Features
@@ -29,7 +29,7 @@ For this project, I utilized the following technologies:
 
 To explore my portfolio website, simply follow these steps:
 
-visit https://jcashleyportfolio.netlify.app/ or:
+visit [Portfolio Website](https://jcashleyportfolio.netlify.app/) or:
 
 1. Clone or download the project repository to your local machine.
 
@@ -54,6 +54,6 @@ More Content: Add more project details, achievements, and blog posts to offer a 
 My portfolio website is open-source, and its code is available in the associated GitHub repository. You are welcome to use, modify, or distribute the code as per the project's license.
 
 ## Contact
-If you have any questions, feedback, or would like to connect https://www.linkedin.com/in/jeremy-ashley-webdev/.
+If you have any questions, feedback, or would like to connect [LinkedIn](https://www.linkedin.com/in/jeremy-ashley-webdev/).
 
 Thank you for visiting my portfolio website, and I look forward to sharing more about my work and future projects!
