@@ -23,8 +23,6 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
-// import { TypeAnimation } from 'react-type-animation';
-// import TypeAnimation from './components/MyTitles';
 import MyTitles from './components/MyTitles';
 
 
