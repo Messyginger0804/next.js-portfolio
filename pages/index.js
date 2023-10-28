@@ -1,3 +1,4 @@
+"use client"
 import Head from 'next/head';
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
 import JC from '../public/jc-as-a-sentare.png'
@@ -22,6 +23,9 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
+// import { TypeAnimation } from 'react-type-animation';
+// import TypeAnimation from './components/MyTitles';
+import MyTitles from './components/MyTitles';
 
 
 function Home() {
@@ -56,7 +60,8 @@ function Home() {
           <div className='text-center p-10 py-10'>
             <h1 className="text-xl text-sky-100">Hello I'm</h1>
             <h2 className='text-5xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
-            <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3>
+            {/* <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3> */}
+            <MyTitles />
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-4'>
@@ -69,8 +74,9 @@ function Home() {
            md:h-96 md:w-96 lg:md-80 lg:80'>
               <Image
                 src={JC}
-              // height={300}
-              // width={300}
+                // height={300}
+                // width={300}
+                priority
               />
             </div>
 
