@@ -102,7 +102,7 @@ function Home() {
         </section>
 
         {/* SECTION 2 ---- ABOUT ME----*/}
-        <section id='about' className='min-h-screen my-8'>
+        <section id='about' className='min-h-screen m-2'>
           <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
             <Image src={collage} alt='collage' />
           </div>
@@ -110,7 +110,7 @@ function Home() {
           <h5 className='text-center'>Get To Know Me</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>About Me</h3>
           <div className='lg:mx-40'>
-            <div className='flex text-center shadow-lg rounded-xl my-10'>
+            <div className='flex gap-3 text-center shadow-lg rounded-xl my-10'>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
                 <h3 className='text-lg font-medium'>Family Man</h3>
                 <h4 className=' text-sky-200'>Loving Husband and Father of Three</h4>
