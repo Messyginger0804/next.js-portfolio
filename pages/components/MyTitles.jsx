@@ -8,7 +8,7 @@ function MyTitles() {
                 className='flex items center justify-center text-2xl py-2 text-blue-50 md:text-3xl'
                 sequence={[
                     'Full-Stack Developer',
-                    1000,
+                    2000,
                     'Frontend Developer',
                     1000,
                     'Backend Developer',
