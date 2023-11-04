@@ -63,7 +63,7 @@ function Home() {
             <MyTitles />
 
             {/* CTA buttons */}
-            <div className='flex justify-center gap-4'>
+            <div className='flex justify-center gap-4 sm:text-sm'>
               <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=sharing' target='_blank' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
                 Resume</a>
               <a className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
