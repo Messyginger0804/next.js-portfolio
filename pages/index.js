@@ -58,7 +58,7 @@ function Home() {
           {/* home page */}
           <div className='text-center p-10 py-10'>
             <h1 className="text-xl text-sky-100">Hello I'm</h1>
-            <h2 className='text-4xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
+            <h2 className='text-2xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
             {/* <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3> */}
             <MyTitles />
 
