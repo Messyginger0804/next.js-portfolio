@@ -5,7 +5,7 @@ function MyTitles() {
     return (
         <div>
             <TypeAnimation
-                className='flex items center justify-center text-2xl py-2 text-blue-50 md:text-3xl'
+                className='flex items center justify-center text-lg py-2 text-blue-50 md:text-3xl'
                 sequence={[
                     'Full-Stack Developer',
                     2000,
