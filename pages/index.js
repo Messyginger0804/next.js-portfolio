@@ -58,7 +58,7 @@ function Home() {
           {/* home page */}
           <div className='text-center p-10 py-10'>
             <h1 className="text-xl text-sky-100">Hello I'm</h1>
-            <h2 className='text-5xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
+            <h2 className='text-4xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
             {/* <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3> */}
             <MyTitles />
 
@@ -67,6 +67,8 @@ function Home() {
               <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=sharing' target='_blank' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400'>
                 Resume</a>
               <a className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
+              <a className='hover:bg-sky-300 bg-white p-2 text-gray-800 border-2 border-sky-400' target='_blank' href="https://blogsbyjc.vercel.app/">
+                My Blog</a>
             </div>
 
             <div className='mx-auto p-4 w-100 h-80 mt-5 mb:5 md:mb-20
@@ -465,11 +467,11 @@ function Home() {
 
 
       </main >
-      <footer className='bg-sky-300 text-center py-20'>
+      <footer className='bg-sky-300 text-center pt-10 pb-20'>
         <a href='#' className='text-black'>JC Ashley</a>
         <h5>Fullstack Developer</h5>
 
-        <ul className='flex flex-wrap justify-center gap-11 text-xl text-black'>
+        <ul className='flex justify-center gap-6 md:gap-11 text-xl text-black'>
           <li> <a href='#'>Home</a> </li>
           <li> <a href='#about'>About</a> </li>
           <li> <a href='#experience'>Experience</a> </li>
@@ -478,11 +480,12 @@ function Home() {
         </ul>
 
 
-        <div className='flex justify-center gap-11 text-3xl text-black'>
+        <div className='flex justify-center mt-6 mb-6 gap-11 text-3xl text-black'>
           <a className='hover:text-white' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'><AiFillLinkedin /></a>
           <a className='hover:text-white' href='https://github.com/Messyginger0804'><AiFillGithub /></a>
           <a className='hover:text-white' href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle /></a>
         </div>
+        <a className='underline' href='https://blogsbyjc.vercel.app/' target='_blank'>Check out my Blog site</a>
 
       </footer>
     </div >
