@@ -326,26 +326,6 @@ function Home() {
               </div>
             </div>
 
-            <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
-              <h3 className='text-lg font-medium pt-8 pb-2'>JC-GPT</h3>
-              <div className='flex justify-center'>
-                <Image
-                  className='flex justify-center fit object-center rounded'
-                  src={gpt}
-                  width={100}
-                  height={100}
-                  alt=''
-                />
-              </div>
-              <h3 className='text-lg font-medium pt-8 pb-2'>A Clone of ChatGPT</h3>
-              <p className='pb-4'>A clone of ChatGPT developed using their free access API</p>
-
-              {/* <h4 className='py-4 text-teal-600'>This project is in progress</h4> */}
-              <div className='flex justify-center gap-5'>
-                <a href='https://github.com/Messyginger0804/clonegpt.git' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Github</a>
-                <a href='https://main--jcgpt.netlify.app/' className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400' target='_blank'>Live Demo</a>
-              </div>
-            </div>
             {/*----------PROJECT----------*/}
             <div className=' text-center p-10 rounded-xl my-10 max-w-sm shadow-sky-400 shadow-xl hover:shadow-sky-300'>
               <h3 className='text-lg font-medium pt-8 pb-2'>Google-Clone</h3>
