@@ -122,7 +122,7 @@ function Home() {
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-pointer '>
                 <h3 className='text-lg font-medium'>Blogger</h3>
                 <h4 className=' text-sky-200 hover:underline'>
-                  <Link>
+                  <Link href='https://blogsbyjc.vercel.app/'>
                     Checkout my blog site: Blogs by JC
                   </Link>
                 </h4>
