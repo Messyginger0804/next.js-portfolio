@@ -13,7 +13,7 @@ import gpt from '../public/gpt4.jpg'
 import TFLS from '../public/TFLS.jpg'
 import JLD from '../public/JLD.png'
 import blog from '../public/Blog.png'
-import { FaReact, FaNodeJs, FaBootstrap, FaXTwitter } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaBootstrap, FaXTwitter, FaBlog, FaBloggerB, FaBlogger } from 'react-icons/fa';
 import { RiArticleFill } from 'react-icons/ri';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { MdComputer, MdMessage } from 'react-icons/md';
@@ -87,7 +87,7 @@ function Home() {
               <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
             <a href='https://github.com/Messyginger0804' target='_blank'><AiFillGithub className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
             <a href='https://twitter.com/Messyginger0804' target='_blank'><AiFillTwitterCircle className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
-            {/* <a href='https://twitter.com/Messyginger0804' target='_blank'><RiArticleFill className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a> */}
+            {/* <a href='https://blogsbyjc.vercel.app/' target='_blank'><FaBlogger className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a> */}
           </div>
 
           <div className='bg-blue-300 rounded-full flex justify-center w-ful'>
@@ -119,9 +119,13 @@ function Home() {
           <h3 className='text-center text-3xl py-1 text-sky-300'>About Me</h3>
           <div className='lg:mx-40'>
             <div className='flex gap-3 text-center shadow-lg rounded-xl my-10'>
-              <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
-                <h3 className='text-lg font-medium'>Family Man</h3>
-                <h4 className=' text-sky-200'>Loving Husband and Father of Three</h4>
+              <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-pointer '>
+                <h3 className='text-lg font-medium'>Blogger</h3>
+                <h4 className=' text-sky-200 hover:underline'>
+                  <Link>
+                    Checkout my blog site: Blogs by JC
+                  </Link>
+                </h4>
               </div>
               <div className='p-2 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
                 <h3 className='text-lg font-medium'>Experience</h3>
