@@ -1,7 +1,6 @@
 "use client"
 import Head from 'next/head';
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
-import JC from '../public/jc-as-a-sentare.png'
 import collage from '../public/collage.jpg'
 import Image from 'next/image';
 import tias from '../public/tias-logo.png'
@@ -9,12 +8,11 @@ import port from '../public/port.jpg'
 import tic from '../public/Tic_tac_toe.svg.png'
 import google from '../public/google.jpg'
 import dinfin from '../public/dinerfinder.png'
-import gpt from '../public/gpt4.jpg'
+// import gpt from '../public/gpt4.jpg'
 import TFLS from '../public/TFLS.jpg'
 import JLD from '../public/JLD.png'
 import blog from '../public/Blog.png'
 import { FaReact, FaNodeJs, FaBootstrap, FaXTwitter, FaBlog, FaBloggerB, FaBlogger } from 'react-icons/fa';
-import { RiArticleFill } from 'react-icons/ri';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { MdComputer, MdMessage } from 'react-icons/md';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
@@ -24,7 +22,8 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
-import MyTitles from './components/MyTitles';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 
 function Home() {
@@ -56,33 +55,8 @@ function Home() {
         <section id='/' className='min-h-screen'>
 
           {/* home page */}
-          <div className='text-center p-10 py-10'>
-            <h1 className="text-xl text-sky-100">Hello I'm</h1>
-            <h2 className='text-2xl py-2 text-sky-300 font-medium md:text-6xl'>Jeremy "JC" Ashley</h2>
-            {/* <h3 className='text-2xl py-2 text-blue-50 md:text-3xl'>Fullstack Developer</h3> */}
-            <MyTitles />
-
-            {/* CTA buttons */}
-            <div className='flex justify-center gap-2 md:gap-4 text-xs md:text-sm'>
-              <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=sharing' target='_blank' className='hover:bg-white p-1 md:p-2 text-sky-400 border-2 border-sky-400'>
-                Resume</a>
-              <a className='hover:bg-white bg-sky-300 p-1 md:p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
-              <a className='hover:bg-white  p-1 md:p-2 text-sky-400 border-2 border-sky-400' target='_blank' href="https://blogsbyjc.vercel.app/">
-                My Blog</a>
-            </div>
-
-            <div className='mx-auto p-4 w-100 h-80 mt-5 mb:5 md:mb-20
-           md:h-96 md:w-96 lg:md-80 lg:80'>
-              <Image
-                src={JC}
-                // height={300}
-                // width={300}
-                priority
-              />
-            </div>
-
-          </div >
-          <div className='  text-5xl flex justify-center gap-16 py-3 text-white '>
+          <Header />
+          <div className='text-5xl flex justify-center gap-16 py-3 text-white '>
             <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'>
               <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
             <a href='https://github.com/Messyginger0804' target='_blank'><AiFillGithub className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
@@ -451,7 +425,7 @@ function Home() {
 
 
       </main >
-      <footer className='bg-sky-300 text-center pt-10 pb-20'>
+      {/* <footer className='bg-sky-300 text-center pt-10 pb-20'>
         <a href='#' className='text-black'>JC Ashley</a>
         <h5>Fullstack Developer</h5>
 
@@ -471,7 +445,8 @@ function Home() {
         </div>
         <a className='underline' href='https://blogsbyjc.vercel.app/' target='_blank'>Check out my Blog site</a>
 
-      </footer>
+      </footer> */}
+      <Footer />
     </div >
   )
 }
