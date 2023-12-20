@@ -2,8 +2,6 @@ import React from 'react'
 import MyTitles from './MyTitles';
 
 
-
-
 function Header() {
     return (
         <header className='text-center p-10 py-10'>
