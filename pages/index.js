@@ -12,35 +12,21 @@ import dinfin from '../public/dinerfinder.png'
 import TFLS from '../public/TFLS.jpg'
 import JLD from '../public/JLD.png'
 import blog from '../public/Blog.png'
-import { FaReact, FaNodeJs, FaBootstrap, FaXTwitter, FaBlog, FaBloggerB, FaBlogger } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
-import { MdComputer, MdMessage } from 'react-icons/md';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
-import { AiFillHtml5, AiOutlineMail, AiOutlineWhatsApp, AiOutlineHome, AiOutlineUser, AiTwotoneFolderOpen } from 'react-icons/ai';
+import { AiFillHtml5 } from 'react-icons/ai';
 import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/si';
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import Link from 'next/link';
-import { ToastContainer, toast } from 'react-toastify';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import JC from '../public/jc-as-a-sentare.png'
+import Navbar from './components/Navbar';
+import Contact from './components/Contact';
+
 
 
 function Home() {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_0fdj2mx', 'template_s2t184g', form.current, '_0eJeVE_0upDw61qU')
-      // .then(toast('Thank you for your message, I will get back to you ASAP!'))
-      .then(toast(
-        <h3 className='text-center text-4xl'>Thank you for your message, I will get back to you ASAP!</h3>
-      ))
-    // .then(toast(''))
-    e.target.reset();
-
-  };
-
   return (
     <div className='text-white'>
       <Head>
@@ -56,6 +42,15 @@ function Home() {
 
           {/* home page */}
           <Header />
+          <div className='mx-auto p-4 w-100 h-80 mt-5 mb:5 md:mb-20
+       md:h-96 md:w-96 lg:md-80 lg:80'>
+            <Image
+              src={JC}
+              // height={300}
+              // width={300}
+              priority
+            />
+          </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-white '>
             <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'>
               <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
@@ -64,22 +59,7 @@ function Home() {
             {/* <a href='https://blogsbyjc.vercel.app/' target='_blank'><FaBlogger className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a> */}
           </div>
 
-          <div className='bg-blue-300 rounded-full flex justify-center w-ful'>
-            <nav className='flex justify-center inset-x-2/4 bottom-2 gap-8 p-2 fixed content-center'>
-              <a href='#' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-              ><AiOutlineHome className='text-4xl' /></a>
-              <a href='#about' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-              ><AiOutlineUser className='text-4xl' /></a>
-              <a href='#tech stack' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-              ><MdComputer className='text-4xl' /></a>
-              <a href='#experience' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-              ><AiTwotoneFolderOpen className='text-4xl' /></a>
-
-              <a href='#contact' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-              ><MdMessage className='text-4xl' />
-              </a>
-            </nav >
-          </div>
+          <Navbar />
 
         </section>
 
@@ -368,84 +348,11 @@ function Home() {
         </section>
 
         {/* SECTION 3 -----contact-------*/}
-        <section id='contact' className='min-h-screen py-10'>
-          <h5 className='text-center'>Get In Touch</h5>
-          <h3 className='text-center text-3xl py-1 text-sky-300'>Contact Me</h3>
-          <div className='grid-cols-2'>
-            <div className=''>
 
-              <div>
-                <div className='lg:flex justify-center gap-10 p-10'>
-                  <a href='mailto:j.c.ashley4363@gmail.com' target='_blank'>
-                    <article className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300'>
-                      <AiOutlineMail className='text-4xl' />
-                      <h4 className='text-2xl font-bold'>Email</h4>
-                      <h5>j.c.ashley4363@gmail.com</h5>
-                      <a>Send A Message</a>
-                    </article>
-                  </a>
-                  <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank'>
-                    <article className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300'>
-                      <AiFillLinkedin className='text-4xl' />
-                      <h4 className='text-2xl font-bold'>Linkedin</h4>
-                      <h5>Checkout My Profile</h5>
-                      <a>Send A Message</a>
-                    </article>
-                  </a>
 
-                </div>
-                <form
-                  ref={form} onSubmit={sendEmail}
-                  className='flex-col gap-11 px-15 md:px-20 lg:mx-32'
-                // ref={form} onSubmit={sendEmail(e)}
-                >
-                  <div className='shadow-lg shadow-blue-50'>
-
-                    <input className='resize-none w-full p-1 border-2 border-blue-700 bg-transparent' type='text' name='name' placeholder='full name' required />
-                    <input className='resize-none w-full p-1 border-2 bg-transparent border-blue-700' type='email' name='email' placeholder='youremail@email.com' required />
-                    <textarea className='resize-none w-full p-1 border-2 border-blue-700 bg-transparent' name='message' rows='7' placeholder='your message' required></textarea>
-                  </div>
-                  <button type="submit" className='hover:bg-white bg-sky-300 p-2 text-gray-800 border-2 border-sky-400'>Send Message</button>
-                </form>
-              </div>
-            </div>
-            <ToastContainer
-              lt
-              position="top-left"
-              autoClose={2000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              draggable
-              pauseOnHover
-              theme="dark" />
-          </div>
-        </section >
-
+        <Contact />
 
       </main >
-      {/* <footer className='bg-sky-300 text-center pt-10 pb-20'>
-        <a href='#' className='text-black'>JC Ashley</a>
-        <h5>Fullstack Developer</h5>
-
-        <ul className='flex justify-center gap-6 md:gap-11 text-xl text-black'>
-          <li> <a href='#'>Home</a> </li>
-          <li> <a href='#about'>About</a> </li>
-          <li> <a href='#experience'>Experience</a> </li>
-          <li> <a href='#projects'>Projects</a> </li>
-          <li> <a href='#contact'>Contact Me</a> </li>
-        </ul>
-
-
-        <div className='flex justify-center mt-6 mb-6 gap-11 text-3xl text-black'>
-          <a className='hover:text-white' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'><AiFillLinkedin /></a>
-          <a className='hover:text-white' href='https://github.com/Messyginger0804'><AiFillGithub /></a>
-          <a className='hover:text-white' href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle /></a>
-        </div>
-        <a className='underline' href='https://blogsbyjc.vercel.app/' target='_blank'>Check out my Blog site</a>
-
-      </footer> */}
       <Footer />
     </div >
   )
