@@ -20,7 +20,8 @@ import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/
 import Link from 'next/link';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import JC from '../public/jc-as-a-sentare.png'
+// import JC from '../public/jc-as-a-sentare.png'
+import JC from '../public/justme.png'
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 
@@ -42,13 +43,15 @@ function Home() {
 
           {/* home page */}
           <Header />
-          <div className='mx-auto p-4 w-100 h-80 mt-5 mb:5 md:mb-20
-       md:h-96 md:w-96 lg:md-80 lg:80'>
+          {/* <div className='mx-auto p-4 w-100 h-80 mt-5 mb:5 md:mb-20 md:h-96 md:w-96 lg:md-80 lg:80'> */}
+          <div className="mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
             <Image
               src={JC}
               // height={300}
               // width={300}
               priority
+              layout='fill'
+              objectFit='cover'
             />
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-white '>
@@ -65,7 +68,7 @@ function Home() {
 
         {/* SECTION 2 ---- ABOUT ME----*/}
         <section id='about' className='min-h-screen m-2'>
-          <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
+          <div className='mx-auto bg-gradient-to-b from-sky-300 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
             <Image src={collage} alt='collage' />
           </div>
 
