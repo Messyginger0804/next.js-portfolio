@@ -39,7 +39,7 @@ function Home() {
       <main className='bg-[#19184a] px-5 md:px-20 lg:px-40 overflow-x-hidden'>
 
         {/* HOMEPAGE */}
-        <section id='/' className='min-h-screen'>
+        <section id='/' className='md:min-h-screen'>
 
           {/* home page */}
           <Header />
@@ -50,8 +50,8 @@ function Home() {
               // height={300}
               // width={300}
               priority
-              layout='fill'
-              objectFit='cover'
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-white '>
