@@ -23,7 +23,7 @@ export const projects = [
         title: "Poopie Review",
         image: movieReview,
         descTitle: 'Movie Review Site',
-        desc: '"Blogs by JC" was created using Next.js, Tailwind CSS, and Contentlayer, offering an engaging user experience with MDX blog posts. The project represents my first experience with MDX, Next.js dynam…',
+        desc: 'Dive into movie reviews on PoopieMovies, my inaugural Java project, blending React, Vite, and Tailwind CSS for frontend allure, and venturing into Java Spring Boot and MongoDB for the backend magic…',
         repo: 'https://github.com/Messyginger0804/poopiemovies',
         live: 'https://poopiereviews.netlify.app/',
     },
