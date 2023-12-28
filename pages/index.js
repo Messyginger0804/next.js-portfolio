@@ -1,31 +1,45 @@
 "use client"
+
+// ---imported from NEXT---
 import Head from 'next/head';
-import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
-import collage from '../public/collage.jpg'
+import Link from 'next/link';
 import Image from 'next/image';
-import tias from '../public/tias-logo.png'
-import port from '../public/port.jpg'
-import tic from '../public/Tic_tac_toe.svg.png'
-import google from '../public/google.jpg'
-import dinfin from '../public/dinerfinder.png'
-import movieReview from '../public/movieReview.jpg'
-import TFLS from '../public/TFLS.jpg'
-import JLD from '../public/JLD.png'
-import blog from '../public/profile.png'
+
+// -----imported from reacticons
+import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
 import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/si';
-import Link from 'next/link';
+
+
+// -----Components imported
 import Footer from './components/Footer';
 import Header from './components/Header';
-// import JC from '../public/jc-as-a-sentare.png'
-import JC from '../public/justme.png'
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 
+// --- project images imported
+import tias from '../public/projectImages/tias-logo.png'
+import port from '../public/projectImages/port.jpg'
+import tic from '../public/projectImages/Tic_tac_toe.svg.png'
+import dinfin from '../public/projectImages/dinerfinder.png'
+import google from '../public/projectImages/google.jpg'
+import movieReview from '../public/projectImages/movieReview.jpg'
+import blog from '../public/projectImages/profile.png'
 
+
+// Freelance Images imported
+import JLD from '../public/JLD.png'
+import TFLS from '../public/TFLS.jpg'
+
+
+//====Profile images imported==============================
+// import JC from '../public/jc-as-a-sentare.png'
+import JC from '../public/personal/justme.png'
+import collage from '../public/personal/collage.jpg'
+import { Component } from 'react';
 
 function Home() {
   return (
