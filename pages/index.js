@@ -7,11 +7,11 @@ import Image from 'next/image';
 
 // -----imported from reacticons
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
-import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaBootstrap, FaAws } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { SiPostgresql, SiExpress, SiTailwindcss, SiAcademia } from 'react-icons/si';
+import { SiPostgresql, SiExpress, SiTailwindcss, SiAxios, SiMongodb, SiFirebase, SiAcademia } from 'react-icons/si';
 
 
 // -----Components imported
@@ -40,8 +40,46 @@ import TFLS from '../public/TFLS.jpg'
 import JC from '../public/personal/justme.png'
 import collage from '../public/personal/collage.jpg'
 
-import { frontTech } from './data/data';
-import { backTech } from './data/backData';
+import {
+  frontTech,
+  backTech
+} from './data/data';
+// import { backTech } from './data/backData';
+
+// export const backTech = [
+//   {
+//     name: 'NodeJS',
+//     icon: <FaNodeJs className='text-2xl' />,
+//   },
+//   {
+//     name: 'PostgreSQL',
+//     icon: <SiPostgresql className='text-2xl' />,
+//   },
+//   {
+//     name: 'Express',
+//     icon: <SiExpress className='text-2xl' />,
+//   },
+//   {
+//     name: 'Axios',
+//     icon: <SiAxios className='text-2xl' />
+//   },
+//   {
+//     name: 'Java',
+//     icon: <DiJava className='text-2xl' />
+//   },
+//   {
+//     name: 'MongoDB',
+//     icon: <SiMongodb className='text-2xl' />
+//   },
+//   {
+//     name: 'AWS',
+//     icon: <FaAws className='text-2xl' />,
+//   },
+//   {
+//     name: 'Firebase',
+//     icon: <SiFirebase className='text-2xl' />,
+//   }
+// ]
 
 function Home() {
   return (
@@ -143,25 +181,10 @@ function Home() {
 
               <div className='flex flex-wrap gap-5 hover:ease-out'>
                 {backTech.map((back) => (
-                  <article>
+                  <article className=''>
                     <h4>{back.icon}{back.name}</h4>
                   </article>
                 ))}
-                {/* <article>
-                  <h4> <FaNodeJs />NODE.JS</h4>
-                </article>
-                <article>
-                  <h4> <SiPostgresql />POSTGRESQL</h4>
-                </article>
-                <article>
-                  <h4> <SiExpress />EXPRESS</h4>
-                </article>
-                <article>
-                  <h4><SiAcademia /> AXIOS</h4>
-                </article>
-                <article className='flex text-center'>
-                  <h4 ><DiJava className='text-4xl' />JAVA</h4>
-                </article> */}
               </div>
             </div>
 
