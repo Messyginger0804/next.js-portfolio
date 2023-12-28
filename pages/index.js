@@ -39,7 +39,7 @@ import collage from '../public/personal/collage.jpg'
 import {
   frontTech,
   backTech
-} from '../data/data';
+} from '../data/tech';
 
 function Home() {
   return (
