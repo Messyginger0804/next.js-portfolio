@@ -19,6 +19,7 @@ export const projects = [
     //     live: live,
     // },
     {
+        // inProgress: false,
         inProgress: false,
         title: "Poopie Review",
         image: movieReview,
