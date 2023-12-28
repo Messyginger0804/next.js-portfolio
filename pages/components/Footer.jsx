@@ -1,3 +1,4 @@
+import { link } from 'data/utilities'
 import React from 'react'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
 
@@ -18,11 +19,11 @@ function Footer() {
 
 
             <div className='flex justify-center mt-6 mb-6 gap-11 text-3xl text-black'>
-                <a className='hover:text-white' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'><AiFillLinkedin /></a>
-                <a className='hover:text-white' href='https://github.com/Messyginger0804'><AiFillGithub /></a>
-                <a className='hover:text-white' href='https://twitter.com/Messyginger0804'><AiFillTwitterCircle /></a>
+                <a target='_blank' className='hover:text-white' href={link.linkedin}><AiFillLinkedin /></a>
+                <a target='_blank' className='hover:text-white' href={link.github}><AiFillGithub /></a>
+                <a target='_blank' className='hover:text-white' href={link.twitter}><AiFillTwitterCircle /></a>
             </div>
-            <a className='underline' href='https://blogsbyjc.vercel.app/' target='_blank'>Check out my Blog site</a>
+            <a className='underline' href={link.blog} target='_blank'>Check out my Blog site</a>
 
         </footer>
     )
