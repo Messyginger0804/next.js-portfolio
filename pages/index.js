@@ -39,7 +39,9 @@ import TFLS from '../public/TFLS.jpg'
 // import JC from '../public/jc-as-a-sentare.png'
 import JC from '../public/personal/justme.png'
 import collage from '../public/personal/collage.jpg'
-import { Component } from 'react';
+
+import { frontTech } from './data/data';
+import { backTech } from './data/backData';
 
 function Home() {
   return (
@@ -129,35 +131,23 @@ function Home() {
             <div className='text-center w-full md:w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
               <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
               <div className='flex flex-wrap gap-5 hover:ease-out'>
-                <article >
-                  <h4> <AiFillHtml5 className='text-4xl' />HTML</h4>
-                </article>
-                <article className='flex'>
-                  <h4> <DiCss3 className='text-4xl' />CSS</h4>
-                </article>
-                <article>
-                  <h4 ><DiJavascript className='text-4xl' />JAVASCRIPT</h4>
-                </article>
-                <article>
-                  <h4> <FaBootstrap className='text-4xl' />BOOTSTRAP</h4>
-                </article>
-                <article>
-                  <h4> <SiTailwindcss className='text-4xl' />TAILWIND</h4>
-                </article>
-                <article>
-                  <h4> <FaReact className='text-4xl' />REACT</h4>
-                </article>
-                <article>
-                  <h4> <TbBrandNextjs className='text-4xl' />NEXT.JS</h4>
-                </article>
-
+                {frontTech.map((tech) => (
+                  <article>
+                    <h4>{tech.icon}{tech.name}</h4>
+                  </article>
+                ))}
               </div>
             </div>
             <div className='text-center p-10 rounded-xl my-10 w-full md:w-1/2 shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-none'>
               <h3 className='text-center text-lg font-medium pb-2 text-sky-300'>BACK-END</h3>
 
-              <div className='text-center flex flex-wrap gap-5'>
-                <article>
+              <div className='flex flex-wrap gap-5 hover:ease-out'>
+                {backTech.map((back) => (
+                  <article>
+                    <h4>{back.icon}{back.name}</h4>
+                  </article>
+                ))}
+                {/* <article>
                   <h4> <FaNodeJs />NODE.JS</h4>
                 </article>
                 <article>
@@ -171,7 +161,7 @@ function Home() {
                 </article>
                 <article className='flex text-center'>
                   <h4 ><DiJava className='text-4xl' />JAVA</h4>
-                </article>
+                </article> */}
               </div>
             </div>
 
