@@ -7,11 +7,6 @@ import Image from 'next/image';
 
 // -----imported from reacticons
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
-import { FaReact, FaNodeJs, FaBootstrap, FaAws } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { SiPostgresql, SiExpress, SiTailwindcss, SiAxios, SiMongodb, SiFirebase, SiAcademia } from 'react-icons/si';
 
 
 // -----Components imported
@@ -36,50 +31,15 @@ import TFLS from '../public/TFLS.jpg'
 
 
 //====Profile images imported==============================
-// import JC from '../public/jc-as-a-sentare.png'
 import JC from '../public/personal/justme.png'
 import collage from '../public/personal/collage.jpg'
+
+// ======== data imported from project =================================
 
 import {
   frontTech,
   backTech
-} from './data/data';
-// import { backTech } from './data/backData';
-
-// export const backTech = [
-//   {
-//     name: 'NodeJS',
-//     icon: <FaNodeJs className='text-2xl' />,
-//   },
-//   {
-//     name: 'PostgreSQL',
-//     icon: <SiPostgresql className='text-2xl' />,
-//   },
-//   {
-//     name: 'Express',
-//     icon: <SiExpress className='text-2xl' />,
-//   },
-//   {
-//     name: 'Axios',
-//     icon: <SiAxios className='text-2xl' />
-//   },
-//   {
-//     name: 'Java',
-//     icon: <DiJava className='text-2xl' />
-//   },
-//   {
-//     name: 'MongoDB',
-//     icon: <SiMongodb className='text-2xl' />
-//   },
-//   {
-//     name: 'AWS',
-//     icon: <FaAws className='text-2xl' />,
-//   },
-//   {
-//     name: 'Firebase',
-//     icon: <SiFirebase className='text-2xl' />,
-//   }
-// ]
+} from '../data/data';
 
 function Home() {
   return (
@@ -97,7 +57,6 @@ function Home() {
 
           {/* home page */}
           <Header />
-          {/* <div className='mx-auto p-4 w-100 h-80 mt-5 mb:5 md:mb-20 md:h-96 md:w-96 lg:md-80 lg:80'> */}
           <div className="mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
             <Image
               src={JC}
@@ -113,7 +72,6 @@ function Home() {
               <AiFillLinkedin className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /> </a>
             <a href='https://github.com/Messyginger0804' target='_blank'><AiFillGithub className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
             <a href='https://twitter.com/Messyginger0804' target='_blank'><AiFillTwitterCircle className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a>
-            {/* <a href='https://blogsbyjc.vercel.app/' target='_blank'><FaBlogger className='shadow-lg shadow-sky-300 rounded-full hover:text-sky-500 hover:cursor-pointer' /></a> */}
           </div>
 
           <Navbar />
