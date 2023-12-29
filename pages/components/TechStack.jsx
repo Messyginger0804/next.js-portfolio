@@ -11,14 +11,14 @@ function TechStack() {
             <h5 className='text-center'>Tools I Use</h5>
             <h3 className='text-center text-3xl py-1 text-sky-300'>My Tech Stack</h3>
 
-            <div className='md:my-20 flex flex-wrap justify-center gap-6'>
+            <div className='my-10 flex flex-wrap justify-center gap-6'>
 
                 <div className='text-center w-full md:w-1/2 shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300 cursor-none'>
                     <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
                     <div className='flex flex-wrap gap-5 hover:ease-out'>
                         {frontTech.map((tech) => (
-                            <article>
-                                <h4>{tech.icon}{tech.name}</h4>
+                            <article className='text-center flex justify-center gap-1'>
+                                <h4>{tech.icon}</h4><h4>{tech.name}</h4>
                             </article>
                         ))}
                     </div>
@@ -28,8 +28,8 @@ function TechStack() {
 
                     <div className='flex flex-wrap gap-5 hover:ease-out'>
                         {backTech.map((back) => (
-                            <article className=''>
-                                <h4>{back.icon}{back.name}</h4>
+                            <article className='text-center flex justify-center gap-1'>
+                                <h4>{back.icon}</h4><h4>{back.name}</h4>
                             </article>
                         ))}
                     </div>

@@ -33,7 +33,7 @@ export const AboutMe = () => {
                     </div>
                 </div>
 
-                <p className='text-medium py-5 leading-8 lg:mx-20'>
+                <p className=' text-medium py-5 tracking-widest leading-8 lg:mx-20'>
 
                     I'm a trained Software Engineer and father of 3 that embraces values of dedication and commitment. I always find ways to bring fun and buoyancy into stressful situations.
 
