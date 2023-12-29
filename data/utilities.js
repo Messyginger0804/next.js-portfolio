@@ -12,17 +12,19 @@ export const link = {
 
 }
 
+
 export const heading = (x) => {
     if (x) {
-        return <h2 className='text-xl font-medium p-0 m-0 text-red-300 hover:text-red-700'>Work in progress</h2>
+        // return <h2 className={css}>Work in progress</h2>
+        return <b className='notFinished'>Work in progress</b>
     }
 }
-export const button = (y, z) => {
-    if (y) {
-        return <a href={z} className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>Live Site</a>
+export const button = (a, link, css1, css2) => {
+    if (a) {
+        return <a href={link} className='btn-primary' target='_blank'>Live Site</a>
     } else {
         return (
-            <div className='hover:cursor-not-allowed hover:bg-red-200 hover:text-red-600 p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>Live Site</div>)
+            <div className='btn-disabled' target='_blank'>Live Site</div>)
     }
 }
 

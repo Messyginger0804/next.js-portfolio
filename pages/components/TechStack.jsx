@@ -2,7 +2,8 @@ import React from 'react'
 
 import {
     frontTech,
-    backTech
+    backTech,
+
 } from '../../data/tech';
 
 function TechStack() {

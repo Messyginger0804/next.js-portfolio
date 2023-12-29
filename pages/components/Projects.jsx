@@ -1,7 +1,9 @@
 import React from 'react'
 import { projects } from 'data/projects'
 import Image from 'next/image'
-import { button, heading } from 'data/utilities'
+import {
+    button, heading
+} from 'data/utilities'
 
 
 function Projects() {
