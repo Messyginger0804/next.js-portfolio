@@ -1,21 +1,7 @@
 import React from 'react'
-
 import { projects } from 'data/projects'
 import Image from 'next/image'
-
-const heading = (x) => {
-    if (x) {
-        return <h2 className='text-xl font-medium p-0 m-0 text-red-300 hover:text-red-700'>Work in progress</h2>
-    }
-}
-const button = (y, z) => {
-    if (y) {
-        return <a href={z} className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>Live Site</a>
-    } else {
-        return (
-            <div className='hover:cursor-not-allowed hover:bg-red-200 hover:text-red-600 p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>Live Site</div>)
-    }
-}
+import { button, heading } from 'data/utilities'
 
 
 function Projects() {
@@ -41,7 +27,6 @@ function Projects() {
                     <p className='pb-4 text-xs'>{proj.desc}</p>
                     <div className='flex justify-center gap-5'>
                         <a href={proj.rep} className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>github</a>
-                        {/* <a href={proj.live} className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>Live Site</a> */}
                         {
                             button(proj.isPublished, proj.live)
                         }

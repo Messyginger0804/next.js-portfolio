@@ -10,12 +10,22 @@ import blog from '../public/projectImages/profile.png'
 
 export const projects = [
     {
+        isPublished: true,
+        inProgress: true,
+        title: "Diner Finder",
+        image: dinfin,
+        descTitle: 'Restaurant Review Site',
+        desc: 'DinerFinder: Review and rate restaurants with Vite, React, Tailwind CSS (Frontend) and Node.js, PostgreSQL (Backend). Expanding this is currently an MVP',
+        repo: 'https://github.com/Messyginger0804/dinerAudit',
+        live: 'http://3.144.102.215/',
+    },
+    {
         isPublished: false,
         inProgress: true,
         title: "Tias2.0",
         image: tias,
         descTitle: 'Full Stack E-commerce',
-        desc: 'This is the second version of the E-commerce site Tias. This is not just a new version but a completely rebuilt version. The code is rewritten the functionality will be different. sleek modern design, admin and a custom database...',
+        desc: 'This is the second version of the E-commerce site Tias. This is not just a new version but a completely rebuilt site. The code is rewritten the functionality will be different. sleek modern design, admin and a custom database...',
         repo: 'https://github.com/Messyginger0804/Tias2.0',
         live: 'n/a',
     },
@@ -38,16 +48,6 @@ export const projects = [
         desc: '"Blogs by JC" was created using Next.js, Tailwind CSS, and Contentlayer, offering an engaging user experience with MDX blog posts. The project represents my first experience with MDX, Next.js dynam…',
         repo: 'https://github.com/Messyginger0804/blogs-by-jc-focontent',
         live: 'https://blogsbyjc.vercel.app/',
-    },
-    {
-        isPublished: true,
-        inProgress: true,
-        title: "Diner Finder",
-        image: dinfin,
-        descTitle: 'Restaurant Review Site',
-        desc: 'DinerFinder: Review and rate restaurants with Vite, React, Tailwind CSS (Frontend) and Node.js, PostgreSQL (Backend). Expanding this is currently an MVP',
-        repo: 'https://github.com/Messyginger0804/dinerAudit',
-        live: 'http://3.144.102.215/',
     },
     {
         isPublished: true,
