@@ -9,17 +9,18 @@ import blog from '../public/projectImages/profile.png'
 
 
 export const projects = [
-    // {
-    //     inProgress: true,
-    //     title: title,
-    //     image: image,
-    //     descTitle: descTitle,
-    //     desc: desc,
-    //     repo: repo,
-    //     live: live,
-    // },
     {
-        // inProgress: false,
+        isPublished: false,
+        inProgress: true,
+        title: "Tias2.0",
+        image: tias,
+        descTitle: 'Full Stack E-commerce',
+        desc: 'This is the second version of the E-commerce site Tias. This is not just a new version but a completely rebuilt version. The code is rewritten the functionality will be different. sleek modern design, admin and a custom database...',
+        repo: 'https://github.com/Messyginger0804/Tias2.0',
+        live: 'n/a',
+    },
+    {
+        isPublished: true,
         inProgress: false,
         title: "Poopie Review",
         image: movieReview,
@@ -29,6 +30,7 @@ export const projects = [
         live: 'https://poopiereviews.netlify.app/',
     },
     {
+        isPublished: true,
         inProgress: false,
         title: "Blogs by JC",
         image: blog,
@@ -38,6 +40,7 @@ export const projects = [
         live: 'https://blogsbyjc.vercel.app/',
     },
     {
+        isPublished: true,
         inProgress: true,
         title: "Diner Finder",
         image: dinfin,
@@ -47,6 +50,7 @@ export const projects = [
         live: 'http://3.144.102.215/',
     },
     {
+        isPublished: true,
         inProgress: false,
         title: "Tias.com",
         image: tias,
@@ -56,6 +60,7 @@ export const projects = [
         live: 'https://tias.netlify.app/',
     },
     {
+        isPublished: true,
         inProgress: false,
         title: "Google-Clone",
         image: google,
@@ -65,6 +70,7 @@ export const projects = [
         live: 'https://jcsgoogle.netlify.app/',
     },
     {
+        isPublished: true,
         inProgress: false,
         title: "Google-Clone",
         image: google,
@@ -74,6 +80,7 @@ export const projects = [
         live: 'https://jcsgoogle.netlify.app/',
     },
     {
+        isPublished: true,
         inProgress: false,
         title: "This Portfolio Site",
         image: port,
@@ -84,6 +91,7 @@ export const projects = [
         live: 'https://jcashleyportfolio.netlify.app/',
     },
     {
+        isPublished: true,
         inProgress: false,
         title: "Tic-Tac-Toe",
         image: tic,
