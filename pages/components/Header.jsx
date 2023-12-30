@@ -11,18 +11,18 @@ function Header() {
 
             {/* CTA buttons */}
             <div className='flex justify-center gap-2 md:gap-4 text-xs md:text-sm'>
-                <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=drive_link' target='_blank' className='hover:bg-white p-1 md:p-2 text-sky-400 border-2 border-sky-400'>
+                <a href='https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=drive_link' target='_blank' className='btn-primary'>
                     Resume</a>
-                <a className='hover:bg-white bg-sky-300 p-1 md:p-2 text-gray-800 border-2 border-sky-400' href="#contact">Contact Me</a>
+                <a className='hover:bg-white bg-sky-300 p-1 md:p-2 text-gray-800 border-2 border-sky-400 rounded-lg' href="#contact">Contact Me</a>
                 <a
-                    className='hover:bg-white  p-1 md:p-2 text-sky-400 border-2 border-sky-400'
+                    className='btn-primary'
                     target='_blank' href="https://blogsbyjc.vercel.app/">
                     My Blog</a>
             </div>
-
         </header >
     )
 
 }
+
 
 export default Header
