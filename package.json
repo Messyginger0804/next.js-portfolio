@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@fontsource/dancing-script": "^5.0.16",
     "@heroicons/react": "^2.0.16",
     "emailjs-com": "^3.2.0",
     "icons": "^1.0.0",
@@ -21,7 +22,8 @@
     "react-scroll": "^1.8.9",
     "react-toastify": "^9.1.2",
     "react-type-animation": "^3.2.0",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "text-animation": "^1.2.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
