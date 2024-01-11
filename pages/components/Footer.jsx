@@ -9,7 +9,7 @@ function Footer() {
             <a href='#' className='text-black'>JC Ashley</a>
             <h5>Fullstack Developer</h5>
 
-            <ul className='flex justify-center gap-6 md:gap-11 text-xl text-black'>
+            <ul className='flex justify-center gap-6 md:gap-11 text-base md:text-lg text-black'>
                 <li> <a href='#'>Home</a> </li>
                 <li> <a href='#about'>About</a> </li>
                 <li> <a href='#experience'>Experience</a> </li>
