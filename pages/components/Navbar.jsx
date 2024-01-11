@@ -5,22 +5,18 @@ import { MdComputer, MdMessage } from 'react-icons/md';
 
 function Navbar() {
     return (
-        <div className='bg-blue-300 rounded-full flex justify-center w-ful'>
-            <nav className='flex justify-center inset-x-2/4 bottom-2 gap-8 p-2 fixed content-center'>
-                <a href='#' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-                ><AiOutlineHome className='text-4xl' /></a>
-                <a href='#about' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-                ><AiOutlineUser className='text-4xl' /></a>
-                <a href='#tech stack' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-                ><MdComputer className='text-4xl' /></a>
-                <a href='#experience' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-                ><AiTwotoneFolderOpen className='text-4xl' /></a>
-
-                <a href='#contact' className='bg-transparent shadow-lg shadow-sky-400 hover:shadow-sky-500 hover:bg-sky-300 hover:text-blue-900'
-                ><MdMessage className='text-4xl' />
-                </a>
-            </nav >
-        </div>
+        <nav class="bg-white bg-opacity-75 rounded-full flex justify-center w-fit border border-white border-solid fixed bottom-0 transform -translate-x-1/2 -translate-y-1/2 left-1/2 p-2">
+            <a href='#' class='text-blue-900 p-2 
+        hover:bg-sky-300 hover:text-blue-900 hover:rounded-full hover:shadow'><AiOutlineHome class='text-4xl' /></a>
+            <a href='#about' class='text-blue-900 p-2 
+        hover:bg-sky-300 hover:text-blue-900 hover:rounded-full hover:shadow'><AiOutlineUser class='text-4xl' /></a>
+            <a href='#tech stack' class='text-blue-900 p-2 
+        hover:bg-sky-300 hover:text-blue-900 hover:rounded-full hover:shadow'><MdComputer class='text-4xl' /></a>
+            <a href='#experience' class='text-blue-900 p-2 
+        hover:bg-sky-300 hover:text-blue-900 hover:rounded-full hover:shadow'><AiTwotoneFolderOpen class='text-4xl' /></a>
+            <a href='#contact' class='text-blue-900 p-2 
+        hover:bg-sky-300 hover:text-blue-900 hover:rounded-full hover:shadow'><MdMessage class='text-4xl' /></a>
+        </nav>
     )
 }
 
