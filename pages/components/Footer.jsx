@@ -17,7 +17,6 @@ function Footer() {
                 <li> <a href='#contact'>Contact Me</a> </li>
             </ul>
 
-
             <div className='flex justify-center mt-6 mb-6 gap-11 text-3xl text-black'>
                 <a target='_blank' className='hover:text-white' href={link.linkedin}><AiFillLinkedin /></a>
                 <a target='_blank' className='hover:text-white' href={link.github}><AiFillGithub /></a>

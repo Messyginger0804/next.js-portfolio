@@ -17,7 +17,7 @@ function TechStack() {
                     <h3 className='text-lg font-medium pb-2 text-sky-300'>FRONT-END</h3>
                     <div className='flex flex-wrap gap-5 hover:ease-out'>
                         {frontTech.map((tech) =>
-                            <article className='text-center flex justify-center gap-1
+                            <article className='text-center flex justify-center gap-1 text-xs md:text-base
                             transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-150 hover:bg-sky-500 hover:shadow-sky-50 hover:rounded duration-300
                             '>
                                 <h4>{tech.icon}</h4><h4>{tech.name}</h4>
@@ -30,7 +30,7 @@ function TechStack() {
 
                     <div className='flex flex-wrap gap-5 hover:ease-out'>
                         {backTech.map((back) => (
-                            <article className='text-center flex justify-center gap-1
+                            <article className='text-center flex justify-center gap-1 text-xs md:text-base
                             transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-150 hover:bg-sky-500 hover:shadow-sky-50 hover:rounded duration-300
                             '>
                                 <h4>{back.icon}</h4><h4>{back.name}</h4>
