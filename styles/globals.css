@@ -2,7 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {}
+/* styles.css or your styles file */
+/* Apply these styles to make the y-axis scrollbar transparent in WebKit browsers */
+@layer utilities {
+  .custom-scrollbar {
+    overflow-y: scroll;
+    /* Allow vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    scrollbar-width: thin;
+    /* Firefox: Set the width of the scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    /* Adjust as needed */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Transparent color for the thumb */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Transparent color for the track */
+  }
+}
 
 
 html,
@@ -51,7 +77,7 @@ a {
   background-color: rgb(254 202 202);
 }
 
-.notFinished {
+/* .notFinished {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -59,6 +85,25 @@ a {
   margin: 0;
   border-color: rgb(252 165 165);
   color: rgb(248 113 113);
+} */
+
+.notFinished {
+  font-size: 1.5rem;
+  color: #F87171;
+  margin: 0;
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  background: rgba(255, 255, 255, 0.2);
+  /* Adjust the background color and opacity as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  /* Ensure the overlay is above the content */
 }
 
 .animation:hover {
