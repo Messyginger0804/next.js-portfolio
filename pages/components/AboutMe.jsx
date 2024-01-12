@@ -14,7 +14,7 @@ export const AboutMe = () => {
             <h5 className='text-center'>Get To Know Me</h5>
             <h3 className='text-center text-3xl py-1 text-sky-300'>About Me</h3>
             <div className='lg:mx-40'>
-                <div className='flex flex-col sm:flex-row gap-0.5 text-center shadow-lg rounded-xl my-10 w-full'>                    <div className='p-4 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-pointer'>
+                <div className='flex flex-col md:flex-row gap-1 text-center shadow-lg rounded-xl my-10 w-full'>                    <div className='p-4 m-auto border-2 text-center rounded-xl shadow-sky-400 shadow-xl hover:shadow-sky-300 cursor-pointer'>
                     <h3 className='text-base md:text-lg font-medium'>Blogger</h3>
                     <h4 className='text-sky-200 hover:underline'>
                         <Link href='https://blogsbyjc.vercel.app/'

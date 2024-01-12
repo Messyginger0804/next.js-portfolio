@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@fontsource/dancing-script": "^5.0.16",
     "@heroicons/react": "^2.0.16",
+    "@mui/material": "^5.15.4",
     "emailjs-com": "^3.2.0",
     "icons": "^1.0.0",
     "next": "13.1.6",
