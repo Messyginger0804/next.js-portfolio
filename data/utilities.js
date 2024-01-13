@@ -14,12 +14,12 @@ export const link = {
 
 // utilities.js or your utilities file
 export function truncateText(text, maxLength) {
-    if (text.length <= maxLength) {
+    if (text?.length <= maxLength) {
         return text;
     }
 
     // Truncate the text and append ellipsis
-    return text.slice(0, maxLength) + '...';
+    return text?.slice(0, maxLength) + '...';
 }
 
 

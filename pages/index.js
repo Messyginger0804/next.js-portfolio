@@ -12,6 +12,8 @@ import { AboutMe } from './components/AboutMe';
 import Profile from './components/Profile';
 import TechStack from './components/TechStack';
 import FreeLance from './components/FreeLance';
+import ProjectCard from './components/ProjectCard';
+import SlideShow from './components/SlideShow';
 
 
 function Home() {
@@ -23,7 +25,7 @@ function Home() {
         <meta name="description" content="JC's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className='bg-[#19184a] px-5 md:px-20 lg:px-40 overflow-x-hidden'>
+      <main className='bg-[#19184a] px-5 md:px-20 lg:px-40'>
 
         {/* HOMEPAGE */}
         <section id='/' className='md:min-h-screen'>
@@ -48,7 +50,16 @@ function Home() {
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
-          <Projects />
+          {/* <Projects /> */}
+          {/* <ProjectCard /> */}
+
+
+          <div className='flex justify-center'>
+
+            <SlideShow />
+          </div>
+
+
         </section>
 
         {/* SECTION 3 -----contact-------*/}
