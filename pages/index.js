@@ -2,6 +2,8 @@
 
 import Head from 'next/head';
 
+import { projects } from 'data/projects';
+
 // -----Components imported
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -50,13 +52,15 @@ function Home() {
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
-          {/* <Projects /> */}
-          {/* <ProjectCard /> */}
+          <Projects projects={projects} />
+          {/* <div className='hidden'> */}
+
+          {/* </div> */}
 
 
-          <div className='flex justify-center'>
+          <div className='flex justify-center md:visible'>
 
-            <SlideShow />
+            <SlideShow projects={projects} />
           </div>
 
 

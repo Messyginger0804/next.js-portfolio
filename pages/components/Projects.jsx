@@ -1,14 +1,19 @@
 import React from 'react';
-import { projects } from 'data/projects';
+// import { projects } from 'data/projects';
 import ProjectCard from './ProjectCard';
 
-function Projects() {
+function Projects({ projects }) {
     return (
-        <div className=''>
-            <div className='flex justify-center flex-wrap lg:flex gap-5'>
-                <ProjectCard projects={projects} />
-            </div >
-        </div >
+        <>
+            {projects?.map((proj) => (
+                <div className='flex justify-center gap-3'>
+                    <ProjectCard
+                        key={proj.title}
+                        proj={proj}
+                    />
+                </div>
+            ))}
+        </>
     );
 }
 
