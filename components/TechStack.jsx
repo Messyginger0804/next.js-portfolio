@@ -3,7 +3,7 @@ import {
     frontTech,
     backTech,
 
-} from '../../data/tech';
+} from '../data/tech';
 
 function TechStack() {
     return (

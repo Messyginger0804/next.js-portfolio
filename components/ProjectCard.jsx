@@ -2,10 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import { button, heading, truncateText } from 'data/utilities';
 
-function ProjectCard({ proj }) {
+export function ProjectCard({ proj }) {
     const maxDescLength = 150;
 
-    console.log('---------projectcard', proj.desc)
+    // console.log('---------projectcard', proj.desc)
+    // console.log(proj)
 
     return (
         <div className='text-center p-10 rounded-xl w-[280px] h-[400px] my-6 max-w-sm relative shadow-sky-400 shadow-xl hover:shadow-sky-300'>

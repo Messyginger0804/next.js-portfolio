@@ -1,10 +1,12 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
-function FreelanceCard({ job }) {
+export function FreelanceCard({ job }) {
 
-    console.log("--------->", job);
+    // console.log("--------->", job);
     return (
         <div className=' flex justify-center flex-wrap lg:flex gap-10'>
             <div className='text-center p-10 w-[280px] h-[390px] rounded-xl my-10 shadow-sky-400 shadow-xl hover:shadow-sky-300'>

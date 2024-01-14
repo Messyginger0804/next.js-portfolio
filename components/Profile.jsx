@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { link } from 'data/utilities'
-import JC from '../../public/personal/justme.png'
+import JC from '../public/personal/justme.png'
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai'
 
 

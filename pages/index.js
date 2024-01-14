@@ -1,23 +1,21 @@
 "use client"
 
 import Head from 'next/head';
-
 // data
 import { projects } from 'data/projects';
 import { contractedJobs } from 'data/jobs';
-
 // -----Components imported
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import { AboutMe } from './components/AboutMe';
-import Profile from './components/Profile';
-import TechStack from './components/TechStack';
-import FreeLance from './components/FreeLance';
-import ProjectSlideShow from './components/ProjectSlideShow';
-import FreelanceSlideShow from './components/FreelanceSlideShow';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
+import Contact from '../components/Contact';
+import Projects from '../components/Projects';
+import { AboutMe } from '../components/AboutMe';
+import Profile from '../components/Profile';
+import TechStack from '../components/TechStack';
+import FreeLance from '../components/FreeLance';
+import ProjectSlideShow from '../components/ProjectSlideShow';
+import FreelanceSlideShow from '../components/FreelanceSlideShow';
 
 
 function Home() {

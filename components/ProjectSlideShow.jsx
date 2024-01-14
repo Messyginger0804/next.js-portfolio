@@ -5,7 +5,7 @@ import Carousel from 'react-material-ui-carousel';
 import { BiArrowToLeft, BiArrowToRight } from 'react-icons/bi';
 import ProjectCard from './ProjectCard';
 
-function ProjectSlideShow({ projects }) {
+export function ProjectSlideShow({ projects }) {
     return (
         <div className="h-full m-auto">
             <Carousel
