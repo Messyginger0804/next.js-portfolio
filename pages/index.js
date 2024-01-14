@@ -52,19 +52,18 @@ function Home() {
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
-          <Projects projects={projects} />
-          {/* <div className='hidden'> */}
 
-          {/* </div> */}
-
-
-          <div className='flex justify-center md:visible'>
-
-            <SlideShow projects={projects} />
+          <div className='hidden md:block'>
+            {/* This div is visible on tablets and computers */}
+            <Projects projects={projects} />
           </div>
 
-
+          <div className="md:hidden">
+            {/* This div is visible on phones */}
+            <SlideShow projects={projects} />
+          </div>
         </section>
+
 
         {/* SECTION 3 -----contact-------*/}
         <Contact />
