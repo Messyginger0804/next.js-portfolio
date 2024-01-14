@@ -14,8 +14,8 @@ import { AboutMe } from './components/AboutMe';
 import Profile from './components/Profile';
 import TechStack from './components/TechStack';
 import FreeLance from './components/FreeLance';
-import ProjectCard from './components/ProjectCard';
 import SlideShow from './components/SlideShow';
+import Work from './components/Work';
 
 
 function Home() {
@@ -48,7 +48,8 @@ function Home() {
 
         <section id='experience' className='min-h-screen'>
           {/* -------------Contracted Work===================== */}
-          <FreeLance />
+          {/* <FreeLance /> */}
+          <Work />
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
