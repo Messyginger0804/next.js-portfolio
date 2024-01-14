@@ -1,6 +1,9 @@
 import React from 'react'
+import { BiArrowToLeft, BiArrowToRight } from 'react-icons/bi'
+import Carousel from 'react-material-ui-carousel'
+import FreelanceCard from './FreelanceCard'
 
-function FreelanceSlideShow() {
+function FreelanceSlideShow({ contractedJobs }) {
     return (
         <div className="h-[390px] m-auto">
             <Carousel

@@ -2,6 +2,7 @@
 
 import Head from 'next/head';
 
+// data
 import { projects } from 'data/projects';
 import { contractedJobs } from 'data/jobs';
 
@@ -16,7 +17,7 @@ import Profile from './components/Profile';
 import TechStack from './components/TechStack';
 import FreeLance from './components/FreeLance';
 import ProjectSlideShow from './components/ProjectSlideShow';
-import ContractedJobsSlideShow from './components/Work';
+import FreelanceSlideShow from './components/FreelanceSlideShow';
 
 
 function Home() {
@@ -56,8 +57,8 @@ function Home() {
             <FreeLance contractedJobs={contractedJobs} />
           </div>
 
-          <div className="md:hidden flex just">
-            <ContractedJobsSlideShow />
+          <div className="md:hidden">
+            <FreelanceSlideShow contractedJobs={contractedJobs} />
           </div>
           {/* ----------PROJECTS---------- */}
           <h5 className='text-center mt-4'>My Experience</h5>
