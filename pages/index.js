@@ -3,6 +3,7 @@
 import Head from 'next/head';
 
 import { projects } from 'data/projects';
+import { contractedJobs } from 'data/jobs';
 
 // -----Components imported
 import Footer from './components/Footer';
@@ -14,8 +15,8 @@ import { AboutMe } from './components/AboutMe';
 import Profile from './components/Profile';
 import TechStack from './components/TechStack';
 import FreeLance from './components/FreeLance';
-import SlideShow from './components/SlideShow';
-import Work from './components/Work';
+import ProjectSlideShow from './components/ProjectSlideShow';
+import ContractedJobsSlideShow from './components/Work';
 
 
 function Home() {
@@ -47,22 +48,29 @@ function Home() {
         </section>
 
         <section id='experience' className='min-h-screen'>
+
+          <h5 className='text-center mt-3'>My Recent Work</h5>
+          <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
           {/* -------------Contracted Work===================== */}
-          {/* <FreeLance /> */}
-          <Work />
+          <div className='hidden md:block'>
+            <FreeLance contractedJobs={contractedJobs} />
+          </div>
+
+          <div className="md:hidden flex just">
+            <ContractedJobsSlideShow />
+          </div>
           {/* ----------PROJECTS---------- */}
-          <h5 className='text-center'>My Experience</h5>
+          <h5 className='text-center mt-4'>My Experience</h5>
           <h3 className='text-center text-3xl py-1 text-sky-300'>Projects</h3>
 
           <div className='hidden md:block'>
-            {/* This div is visible on tablets and computers */}
             <Projects projects={projects} />
           </div>
 
           <div className="md:hidden">
-            {/* This div is visible on phones */}
-            <SlideShow projects={projects} />
+            <ProjectSlideShow projects={projects} />
           </div>
+
         </section>
 
 
