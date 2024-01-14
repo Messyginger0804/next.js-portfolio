@@ -5,7 +5,7 @@ import FreelanceCard from './FreelanceCard'
 
 function FreelanceSlideShow({ contractedJobs }) {
     return (
-        <div className="h-[390px] m-auto">
+        <div className="h-full m-auto">
             <Carousel
                 NextIcon={<BiArrowToRight className="text-4xl text-white " />}
                 PrevIcon={<BiArrowToLeft className="text-4xl text-white" />}
