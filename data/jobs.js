@@ -18,5 +18,4 @@ export const contractedJobs = [
         image: JLD,
         description: 'DFW Therapy and Counseling Clinic',
     },
-    // Add more contracted jobs as needed
 ];
