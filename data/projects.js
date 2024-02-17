@@ -5,6 +5,7 @@ import dinfin from '../public/projectImages/dinerfinder.png'
 import google from '../public/projectImages/google.jpg'
 import movieReview from '../public/projectImages/movieReview.jpg'
 import blog from '../public/projectImages/profile.png'
+import fcc from '../public/projectImages/freecodecamp.png'
 
 
 
@@ -13,7 +14,7 @@ export const projects = [
         isPublished: true,
         inProgress: false,
         title: "FreeCodeCamp Portfolio",
-        image: dinfin,
+        image: fcc,
         descTitle: 'FreeCodeCamp Portfolio',
         desc: 'Explore my FreeCodeCamp portfolio—a culmination of projects crafted using vanilla JavaScript and Tailwind CSS, following the Responsive Web Design roadmap. This single-page application, my inaugural project with routing, is devoid of frameworks. Immerse yourself in my projects and witness the passion fueling my journey in web development!',
         repo: 'https://github.com/Messyginger0804/freeCodeCampPortfolio.git',
