@@ -27,7 +27,7 @@ export function ProjectCard({ proj }) {
                 {/* Description container */}
                 <div className='h-[150px] my-2'>
                     <h3 className='text-lg font-medium pt-1 pb-1'>{proj.descTitle}</h3>
-                    <p className='text-xs custom-scrollbar'>{truncateText(proj.desc, maxDescLength)}</p>
+                    <p className='text-xs'>{truncateText(proj.desc, maxDescLength)}</p>
                 </div>
             </div>
 
