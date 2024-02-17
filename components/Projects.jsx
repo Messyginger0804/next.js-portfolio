@@ -1,5 +1,4 @@
 import React from 'react';
-// import { projects } from 'data/projects';
 import ProjectCard from './ProjectCard';
 
 function Projects({ projects }) {
