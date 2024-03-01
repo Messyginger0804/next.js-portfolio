@@ -33,7 +33,7 @@ function Home() {
         <link rel="shortcut icon" href="../favicon.ico" />
         <title>Jeremy's Portfolio</title>
         <meta name="description" content="JC's Portfolio" />
-        <meta property="og:image" content="../justme.png" />
+        <meta property="image" content="../justme.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className='bg-[#19184a] px-5 md:px-20 lg:px-40'>
