@@ -21,6 +21,14 @@ import FreelanceSlideShow from '../components/FreelanceSlideShow';
 function Home() {
   return (
     <div className='text-white'>
+      {/* <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Erik Karlsson">
+<meta property="og:description" content="Portfolio page made by Erik in React.">
+<meta property="og:image" content="https://erikkarlsson.dev/assets/prev.png">
+<meta property="og:url" content="https://erikkarlsson.dev"></meta> */}
       <Head>
         <link rel="shortcut icon" href="../favicon.ico" />
         <title>Jeremy's Portfolio</title>
