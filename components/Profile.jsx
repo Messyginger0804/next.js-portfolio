@@ -11,8 +11,7 @@ function Profile() {
             <div className="mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
                 <Image
                     src={JC}
-                    // height={300}
-                    // width={300}
+                    alt="JC"
                     priority
                     fill
                     style={{ objectFit: "cover" }}
