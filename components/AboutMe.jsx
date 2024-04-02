@@ -8,7 +8,12 @@ export const AboutMe = () => {
     return (
         <>
             <div className='mx-auto bg-gradient-to-b from-sky-300 rounded-full w-80 h-80 mt-5 mb-4 md:h-96 md:w-96 hover:rotate-12 hover:duration-1000'>
-                <Image src={collage} alt='collage of Me & Family' />
+                {/* <Image src='https://drive.google.com/file/d/1xW_PMji6t8vpORDw7oTAnRiRYCpazdW4/view?usp=drive_link' width={300} height={300} /> */}
+                {/* <Image src={collage} alt='collage of Me & Family' /> */}
+                <img src="https://drive.google.com/file/d/1xW_PMji6t8vpORDw7oTAnRiRYCpazdW4/view?usp=sharing" alt="will this work" />
+                <img src="http://drive.google.com/uc?export=view&id=1xW_PMji6t8vpORDw7oTAnRiRYCpazdW4" alt="will this work" />
+
+                {/* http://drive.google.com/uc?export=view&id=URLIDHere */}
             </div>
 
             <h5 className='text-center'>Get To Know Me</h5>
