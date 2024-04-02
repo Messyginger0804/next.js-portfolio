@@ -1,5 +1,5 @@
 // import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
-import { FaReact, FaNodeJs, FaBootstrap, FaAws } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaBootstrap, FaAws, FaWordpress } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
 import { AiFillHtml5 } from 'react-icons/ai';
@@ -39,6 +39,10 @@ export const frontTech = [
     {
         name: 'Next.js',
         icon: <TbBrandNextjs className='text-2xl' />,
+    },
+    {
+        name: 'WordPress',
+        icon: <FaWordpress className='text-2xl' />,
     }
 ]
 
