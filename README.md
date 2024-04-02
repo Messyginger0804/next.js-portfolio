@@ -1,6 +1,6 @@
 # Portfolio Website - Built with Next.js
 
-Welcome to my portfolio website, which I built using Next.js. This project marks my first interaction with Next.js, and although it's currently a single-page application, I took advantage of Next.js features such as the image and link components. In the future, I plan to expand this portfolio by creating components like more traditional React applications, offering more content and a richer user experience. Tailwind CSS was used for styling, providing a sleek and responsive design.
+Welcome to my portfolio website, which I built using Next.js. This project marks my first interaction with Next.js, and although it's currently a single-page application, I took advantage of Next.js features such as the image and link components. In the future, I plan to combine my blog site to my portfolio site having one website that has all I have to offer to the outsite world in one place. 😉
 
 ## Project Overview
 
