@@ -1,5 +1,5 @@
-import JLD from '../public/JLD.png'
-import TFLS from '../public/TFLS.jpg'
+import JLD from '../public/projectImages/JLD.png'
+import TFLS from '../public/projectImages/TFLS.jpg'
 
 export const contractedJobs = [
     {
