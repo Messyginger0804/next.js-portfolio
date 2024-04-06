@@ -33,10 +33,10 @@ function Home() {
 <meta property="og:url" content="https://erikkarlsson.dev"></meta> */}
       <Head>
         <link rel="shortcut icon" href="../favicon.ico" />
-        <title>Jeremy's Portfolio</title>
-        <meta name="description" content="JC's Portfolio" />
+        <title>Jeremy "JC"'s Portfolio</title>
+        <meta name="og:description" content="Experience and Passionate Software Developer hosting my work for you viewing..." />
         {/* <meta property="image" content="https://jcashleyportfolio.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjustme.628e994a.png&w=1920&q=75" /> */}
-        <meta property="image" content={JC} />
+        <meta property="og:image" content={JC} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className='bg-[#19184a] px-5 md:px-20 lg:px-40'>
