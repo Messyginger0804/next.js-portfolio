@@ -16,6 +16,8 @@ import TechStack from '../components/TechStack';
 import FreeLance from '../components/FreeLance';
 import ProjectSlideShow from '../components/ProjectSlideShow';
 import FreelanceSlideShow from '../components/FreelanceSlideShow';
+import JC from '../public/projectImages/justme.png'
+
 
 
 function Home() {
@@ -33,7 +35,8 @@ function Home() {
         <link rel="shortcut icon" href="../favicon.ico" />
         <title>Jeremy's Portfolio</title>
         <meta name="description" content="JC's Portfolio" />
-        <meta property="image" content="https://jcashleyportfolio.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjustme.628e994a.png&w=1920&q=75" />
+        {/* <meta property="image" content="https://jcashleyportfolio.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjustme.628e994a.png&w=1920&q=75" /> */}
+        <meta property="image" content={JC} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className='bg-[#19184a] px-5 md:px-20 lg:px-40'>
