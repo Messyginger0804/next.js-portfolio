@@ -1,14 +1,13 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import { AiOutlineMail, AiFillLinkedin } from 'react-icons/ai';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { css } from '@emotion/react';
+import ContactSection from './ContactSection';
 
-function Contact() {
+function ContactForm() {
     const form = useRef();
-    const [loading, setLoading] = useState(false);
 
     const sendEmail = (values, actions) => {
         const formElement = form.current;
@@ -38,7 +37,6 @@ function Contact() {
                 });
             })
             .finally(() => {
-                setLoading(false);
                 actions.setSubmitting(false);
             });
     };
@@ -61,24 +59,7 @@ function Contact() {
             <div className='grid-cols-2'>
                 <div className=''>
                     <div>
-                        <div className='lg:flex justify-center gap-10 p-10'>
-                            <a href='mailto:j.c.ashley4363@gmail.com' target='_blank' rel='noopener noreferrer'>
-                                <article className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300'>
-                                    <AiOutlineMail className='text-4xl' />
-                                    <h4 className='text-2xl font-bold'>Email</h4>
-                                    <h5>j.c.ashley4363@gmail.com</h5>
-                                    <a>Send A Message</a>
-                                </article>
-                            </a>
-                            <a href='https://www.linkedin.com/in/jeremy-ashley-webdev/' target='_blank' rel='noopener noreferrer'>
-                                <article className='text-center shadow-xl shadow-sky-400 p-10 rounded-xl my-10 hover:shadow-sky-300'>
-                                    <AiFillLinkedin className='text-4xl' />
-                                    <h4 className='text-2xl font-bold'>Linkedin</h4>
-                                    <h5>Checkout My Profile</h5>
-                                    <a>Send A Message</a>
-                                </article>
-                            </a>
-                        </div>
+                        <ContactSection />
                         <Formik
                             initialValues={{ name: '', email: '', message: '' }}
                             validationSchema={validationSchema}
@@ -136,4 +117,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default ContactForm;
