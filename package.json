@@ -16,6 +16,7 @@
     "@heroicons/react": "^2.0.16",
     "@mui/material": "^5.15.4",
     "emailjs-com": "^3.2.0",
+    "formik": "^2.4.5",
     "icons": "^1.0.0",
     "next": "13.1.6",
     "npm-check-updates": "^16.14.5",
@@ -24,9 +25,12 @@
     "react-icons": "^4.12.0",
     "react-material-ui-carousel": "^3.4.2",
     "react-scroll": "^1.8.9",
+    "react-spinners": "^0.13.8",
     "react-toastify": "^9.1.2",
     "react-type-animation": "^3.2.0",
-    "text-animation": "^1.2.10"
+    "sweetalert2": "^11.10.7",
+    "text-animation": "^1.2.10",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
