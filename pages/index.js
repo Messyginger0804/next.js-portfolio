@@ -8,7 +8,7 @@ import { contractedJobs } from 'data/jobs';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
-import Contact from '../components/Contact';
+import Contact from '../components/ContactForm';
 import Projects from '../components/Projects';
 import { AboutMe } from '../components/AboutMe';
 import Profile from '../components/Profile';
