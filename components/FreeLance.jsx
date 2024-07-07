@@ -1,6 +1,6 @@
 import React from 'react'
-
 import FreelanceCard from './FreelanceCard';
+
 
 function FreeLance({ contractedJobs }) {
     return (

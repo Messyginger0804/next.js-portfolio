@@ -61,7 +61,7 @@ function Home() {
         <section id='experience' className='min-h-screen'>
 
           <h5 className='text-center mt-3'>My Recent Work</h5>
-          <h3 className='text-center text-3xl py-1 text-sky-300'>Contracted Jobs</h3>
+          <h3 className='text-center text-3xl py-1 text-sky-300'>Professional Work</h3>
           {/* -------------Contracted Work===================== */}
           <div className='hidden md:block'>
             <FreeLance contractedJobs={contractedJobs} />
