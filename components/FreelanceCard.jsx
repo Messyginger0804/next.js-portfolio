@@ -16,10 +16,10 @@ export function FreelanceCard({ job }) {
                 <Link href={job.link}>
                     <div className='flex justify-center'>
                         <Image
-                            className='flex justify-center fit object-center rounded'
+                            className='flex justify-center fit object-center rounded h-32 w-28'
                             src={job.image}
-                            width={100}
-                            height={100}
+                            // width={100}
+                            // height={100}
                             alt={`${job.title} 'logo'`}
                         />
                     </div>

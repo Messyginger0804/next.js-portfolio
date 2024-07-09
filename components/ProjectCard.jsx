@@ -32,7 +32,7 @@ export function ProjectCard({ proj }) {
             </div>
 
             {/* Buttons container */}
-            <div className='flex justify-evenly absolute bottom-0 left-0 w-full p-2 z-20'>
+            <div className='flex justify-evenly absolute bottom-0 left-0 w-full p-6 z-20'>
                 <a href={proj.rep} className='hover:bg-white p-2 text-sky-400 border-2 border-sky-400 rounded-lg' target='_blank'>
                     github
                 </a>
